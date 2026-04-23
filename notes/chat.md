@@ -193,3 +193,14 @@ Document successfully moved out of the primary flow. Ready to proceed with the n
 - Preserved Markdown numbering doctrine (`1.` for all ordered lists).
 - Ensured parent‑safe tone and consistent formatting.
 - Document is now production‑ready and integrated into the workflow.
+
+### 2026‑04‑23 18:47 EDT — PopOS! Installation — Step 8 Recovery and Completion — Session Log
+
+1. Completed Step 8 of the PopOS! installation workflow.
+1. Verified correct behavior when the USB flash drive was not removed during reboot.
+1. Executed recovery path using the traffic‑circle restart icon at the Sign In screen.
+1. Successfully removed the USB flash drive at the correct timing on the second restart.
+1. Updated Step 8 documentation to include the recovery procedure for this scenario.
+1. Reached the Sign In screen for the parent administrator account.
+1. Document confirmed complete and ready for commit and push.
+
