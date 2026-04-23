@@ -173,3 +173,23 @@ Status: COMPLETE.
   - **Username:** best-parent-admin
 - Ensured structural and doctrinal consistency with 07.md
 - File is now ready for commit and push
+
+### 2026-04-23 12:20 EDT — ACTION
+Updated preamble in `download-popos.md` to include that PopOS! is free and open source. Applied caTools bold‑verb doctrine across entire document.
+
+### CONFIRMATION
+Document updated successfully. Styling and doctrine remain consistent.
+
+### 2026-04-23 12:23 EDT — ACTION
+Renamed Step 03 to the 20‑series to remove it from the early parent flow and prevent sequencing conflicts. Step 03 will re‑enter the pipeline after Steps 00–19 are finalized.
+
+### CONFIRMATION
+Document successfully moved out of the primary flow. Ready to proceed with the next governed step.
+
+#### 2026-04-23 13:30 EDT — Styling pass completed for 03-write-popos-to-usb.md
+
+- Applied full styling pass to the document.
+- Normalized bolding for UI labels and operator actions.
+- Preserved Markdown numbering doctrine (`1.` for all ordered lists).
+- Ensured parent‑safe tone and consistent formatting.
+- Document is now production‑ready and integrated into the workflow.
