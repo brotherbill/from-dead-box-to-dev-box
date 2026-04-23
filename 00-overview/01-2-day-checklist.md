@@ -1,32 +1,32 @@
 # 2‑Day Checklist: From Dead Box to Dev Box
-###### from-dead-box-to-dev-box/00-overview/2-day-checklist.md
+###### from-dead-box-to-dev-box/00-overview/01-2-day-checklist.md
 
-This checklist describes the sequence of actions required to perform a complete “brain transplant” on a computer—typically up to ten years old and still physically functional—turning it into a working D development machine. After this process, the system will no longer retain its previous operating system or configuration; it will start fresh with Pop!_OS, regardless of whether it previously ran Windows or macOS or was unable to boot.  
+This checklist describes the sequence of actions required to perform a complete “brain transplant” on a computer—typically up to ten years old and still physically functional—turning it into a working D development machine. After this process, the system will no longer retain its previous operating system or configuration; it will start fresh with PopOS!, regardless of whether it previously ran Windows or macOS or was unable to boot.  
 Each item should be completed in order. Do not skip steps.
 
 ---
 
-## Day 1 – Prepare Install Media and Install Pop!_OS
+## Day 1 – Prepare Install Media and Install PopOS!
 
 ### 1. Confirm target machine and support machine
 
 - [ ] Identify the target machine (the computer that will be rebuilt).
 - [ ] Confirm that all important data on the target machine is either backed up or no longer needed.
 - [ ] Confirm access to a support machine (for example, a PC or Mac) with a web browser, USB port and access to the Internet.
-- [ ] Confirm availability of a USB flash drive of sufficient size for the Pop!_OS image. A USB 3.0 drive is recommended for speed; a USB 2.0 drive will work but the imaging and installation processes will take significantly longer.
+- [ ] Confirm availability of a USB flash drive of sufficient size for the PopOS! image. A USB 3.0 drive is recommended for speed; a USB 2.0 drive will work but the imaging and installation processes will take significantly longer.
 
-### 2. Download Pop!_OS image
+### 2. Download PopOS! image
 
 - [ ] Open the support machine’s browser.
-- [ ] Navigate to the official Pop!_OS download page.
-- [ ] Download the appropriate Pop!_OS ISO image for the target machine.
+- [ ] Navigate to the official PopOS! download page.
+- [ ] Download the appropriate PopOS! ISO image for the target machine.
 - [ ] Record the expected checksum value from the download page.
 - [ ] Verify the downloaded ISO file against the published checksum.
 
 ### 3. Create bootable USB (support machine)
 
 - [ ] Install or open the chosen USB imaging tool (for example, Etcher) on the support machine.
-- [ ] Select the downloaded Pop!_OS ISO file.
+- [ ] Select the downloaded PopOS! ISO file.
 - [ ] Select the USB flash drive as the target.
 - [ ] Start the imaging process and wait for it to complete.
 - [ ] Safely eject the USB flash drive from the support machine.
@@ -39,19 +39,19 @@ Each item should be completed in order. Do not skip steps.
 - [ ] Save changes and exit the firmware/BIOS.
 - [ ] Confirm that the machine attempts to boot from the USB device.
 
-### 5. Install Pop!_OS on the target machine
+### 5. Install PopOS! on the target machine
 
-- [ ] Boot the target machine from the USB device into the Pop!_OS installer.
+- [ ] Boot the target machine from the USB device into the PopOS! installer.
 - [ ] Choose the option to perform a clean install on the internal drive.
 - [ ] Confirm that all existing data on the internal drive will be erased.
 - [ ] Start the installation and wait for it to complete.
-- [ ] Reboot into the newly installed Pop!_OS system when prompted.
+- [ ] Reboot into the newly installed PopOS! system when prompted.
 
 ---
 
 ## Day 2 – Configure Users and Development Environment
 
-### 6. Complete initial Pop!_OS setup
+### 6. Complete initial PopOS! setup
 
 - [ ] On first boot, complete the initial configuration wizard (language, keyboard, time zone, and network).
 - [ ] Create the primary administrator account (parent/guardian account).
@@ -73,13 +73,13 @@ Each item should be completed in order. Do not skip steps.
 
 ### 9. Install Visual Studio Code
 
-- [ ] Download the appropriate VS Code package for Pop!_OS.
+- [ ] Download the appropriate VS Code package for PopOS!.
 - [ ] Install VS Code using the recommended method for the distribution.
 - [ ] Launch VS Code to confirm that it starts correctly for the standard user.
 
 ### 10. Install the D toolchain
 
-- [ ] Install the D compiler (for example, DMD or LDC) using the recommended method for Pop!_OS.
+- [ ] Install the D compiler (for example, DMD or LDC) using the recommended method for PopOS!.
 - [ ] Confirm that the compiler is available on the command line for the standard user.
 - [ ] Install the D language extension in VS Code.
 

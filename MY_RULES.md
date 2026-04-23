@@ -19,6 +19,7 @@
 14. No document may contain jokes, ridicule, or dismissive comparisons.
 15. All Markdown files must begin with a Header 1 title on line 1 and the file‑location header on line 2.
 16. If a Markdown file must be read or executed in a specific order, its filename must begin with a numeric prefix such as `01-filename.md`. The numeric prefix defines the required reading or execution sequence. Files that do not require a specific order must not use numeric prefixes.
+17. In all parent‑facing documentation, the operating system name must be written as **PopOS!** to match the visible brand. The technical spelling **Pop!_OS** may only be used in internal engineering notes or when referring to package names or commands.
 
 
 **Example of required file‑location header:**

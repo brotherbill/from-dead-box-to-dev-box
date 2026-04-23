@@ -30,3 +30,11 @@ Status: COMPLETE.
 
 Status: COMPLETE.
 
+## 2026-04-23 08:35 EDT — Branding Rule Added for PopOS!
+
+1. A new documentation rule was added to MY_RULES.md.
+2. Parent‑facing documentation must use the branded spelling **PopOS!**.
+3. The technical spelling **Pop!_OS** is reserved only for internal engineering contexts (package names, commands, technical notes).
+4. This rule prevents drift and ensures consistent branding across all parent‑facing materials.
+
+Status: COMPLETE.
