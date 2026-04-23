@@ -7,10 +7,10 @@
 1. Press the power button to turn the computer on.
 1. **Immediately begin tapping the boot‑menu key repeatedly.**  
    - On **Dell** computers, this is usually **F12**.  
-   - On **System76** computers, this is usually **F7** (because “76” starts with “7”).  
+   - On **System76** computers, this is usually **F7**.  
    - Other computers may use **F10**, **Esc**, or another F‑key.
 1. Keep tapping until the **boot menu** appears.
-1. The boot menu may look unfamiliar or technical, but the next steps will guide you through exactly what to choose.
+1. The boot menu may look unfamiliar, but the next steps will guide you through exactly what to choose.
 
 ---
 
@@ -33,9 +33,9 @@
 
 1. Some computers include an NVIDIA graphics card.
 1. PopOS! offers a separate installer with NVIDIA drivers included.
-1. These drivers are **not required** for this course.
-1. The course focuses on **console‑based learning** and **basic applications**, not gaming.
-1. Ignoring the NVIDIA graphics card has **no effect** on the D programming experience.
+1. These drivers are not required for this course.
+1. The course focuses on console‑based learning and basic applications.
+1. Ignoring the NVIDIA graphics card has no effect on the D programming experience.
 
 ---
 
@@ -65,8 +65,9 @@
 
 ## 8. Complete the initial setup
 
-1. Follow the on‑screen steps to create a user account.
-1. Set a password.
+1. The first user account created is an administrator account that has sudo privileges.  
+   This account is created by the parent.
+1. Set a password for the parent's administrator account.
 1. Choose whether to enable automatic updates.
 1. When setup is complete, the PopOS! desktop will appear.
 
@@ -75,4 +76,5 @@
 ## 9. Installation complete
 
 1. The computer is now running a clean installation of PopOS!.
-1. The system is ready for console‑based learning and D programming.
+1. The system is ready for post‑installation configuration, including creating a child account, installing development tools, enabling parental controls, and setting up optional remote access.
+1. The parent has completed a major milestone in preparing the computer, establishing a solid foundation for the work that follows.
