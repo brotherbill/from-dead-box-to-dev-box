@@ -163,3 +163,13 @@ Status: COMPLETE.
 - Validated example names (**Best Parent**, **best-parent**, **Power Student**, **power-student**) as compliant placeholders
 - Confirmed privilege separation and deterministic workflow integrity
 - Document approved for commit and push
+
+### 2026‑04‑23 10:46 EDT — 06.md Updated and Logged
+
+- Added placeholder‑clarification line to **06-create-parent-account.md**
+- Inserted: “Enter the following example values (replace with your actual names):”
+- Updated example values for admin parent:
+  - **Full Name:** BEST PARENT (ADMIN)
+  - **Username:** best-parent-admin
+- Ensured structural and doctrinal consistency with 07.md
+- File is now ready for commit and push
