@@ -22,6 +22,8 @@
 17. In all parent‑facing documentation, the operating system name must be written as **PopOS!** to match the visible brand. The technical spelling **Pop!_OS** may only be used in internal engineering notes or when referring to package names or commands.
 18. Every Markdown file must include a full Windows-style absolute path on line 2, beginning with `C:/`, pointing to the file’s exact location within the repository. This path must always reflect the file’s true location and must be updated whenever the file is moved or renamed.
 19. Every entry added to `notes/chat.md` must begin with a descriptive title on line 1 explaining the purpose of the file (e.g., “chat.md — Session Log and State Rehydration Anchor”). Line 2 must contain the full Windows-style absolute path to `notes/chat.md`, beginning with `C:/`. This ensures clarity, self-description, and deterministic rehydration of workflow state.
+20. All entries in `notes/chat.md` must use a standardized timestamp format: `YYYY‑MM‑DD HH:MM ZONE` using a 24‑hour clock and the operator’s local timezone. Seconds must not be included.
+
 
 **Example of required file‑location header:**
 
