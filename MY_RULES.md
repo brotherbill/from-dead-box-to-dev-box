@@ -1,5 +1,5 @@
 # MY_RULES.md
-###### from-dead-box-to-dev-box/MY_RULES.md
+###### C:/dev/repos/from-dead-box-to-dev-box/MY_RULES.md
 
 # Documentation Rules
 
@@ -20,7 +20,8 @@
 15. All Markdown files must begin with a Header 1 title on line 1 and the file‑location header on line 2.
 16. If a Markdown file must be read or executed in a specific order, its filename must begin with a numeric prefix such as `01-filename.md`. The numeric prefix defines the required reading or execution sequence. Files that do not require a specific order must not use numeric prefixes.
 17. In all parent‑facing documentation, the operating system name must be written as **PopOS!** to match the visible brand. The technical spelling **Pop!_OS** may only be used in internal engineering notes or when referring to package names or commands.
-
+18. Every Markdown file must include a full Windows-style absolute path on line 2, beginning with `C:/`, pointing to the file’s exact location within the repository. This path must always reflect the file’s true location and must be updated whenever the file is moved or renamed.
+19. Every entry added to `notes/chat.md` must begin with a descriptive title on line 1 explaining the purpose of the file (e.g., “chat.md — Session Log and State Rehydration Anchor”). Line 2 must contain the full Windows-style absolute path to `notes/chat.md`, beginning with `C:/`. This ensures clarity, self-description, and deterministic rehydration of workflow state.
 
 **Example of required file‑location header:**
 
@@ -89,29 +90,4 @@
 2. Copilot must not provide unsolicited help.
 3. Copilot must not provide alternative paths unless explicitly requested.
 4. Copilot must not introduce ambiguity.
-5. Copilot must not introduce humor, personality, or conversational drift during technical execution.
-6. Copilot may ask clarifying questions only when required for correctness.
-7. Copilot may remind the user to commit and push **only** when the user says **“Success.”**
-
----
-
-# SUCCESS Rules
-
-7.7 When the user responds with **“Success”**, Copilot may issue a single reminder to commit and push the repository. This reminder is explicitly authorized and does not count as unsolicited assistance.
-
-7.8 When the user responds with **“Success”**, Copilot must also remind the user to update `notes/chat.md` before committing and pushing. This reminder is permitted only after the user declares **“Success.”** No additional unsolicited suggestions are allowed.
-
----
-
-# Repository Hygiene Rules
-
-1. All files must follow naming conventions defined in this repository.
-2. All Markdown files must use underscores where required by naming convention.
-3. No editor artifacts (such as `.tscproj`) may appear in recording ZIPs or documentation.
-4. All folder structures must follow the operator‑grade, doctrine‑aligned layout.
-5. All changes must be committed with clear, deterministic commit messages.
-6. All pushes must occur immediately after successful completion of an atomic step.
-
----
-
-# End of MY_RULES.md
+5. Copilot must not introduce humor, personality, or conversational

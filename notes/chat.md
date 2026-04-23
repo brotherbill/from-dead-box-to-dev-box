@@ -38,3 +38,15 @@ Status: COMPLETE.
 4. This rule prevents drift and ensures consistent branding across all parent‑facing materials.
 
 Status: COMPLETE.
+
+# chat.md — Session Log and State Rehydration Anchor
+###### C:/dev/repos/from-dead-box-to-dev-box/notes/chat.md
+
+## 2026-04-23 08:46 EDT — MY_RULES.md Updated
+
+1. Duplicate rule 20 was removed from MY_RULES.md.
+2. Rule 19 remains the authoritative rule governing `notes/chat.md` entry headers.
+3. The documentation rules section is now consistent and free of numbering gaps.
+4. Repository doctrine remains deterministic and aligned with operator-grade standards.
+
+Status: COMPLETE.
