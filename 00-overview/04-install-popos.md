@@ -183,3 +183,29 @@
 
 1. The computer is now running a clean installation of PopOS!.  
    The system is ready for post‑installation configuration, including creating a child account, installing development tools, enabling parental controls, and setting up optional remote access.
+
+---
+
+## Summary
+
+1. You started the computer from the PopOS! USB flash drive using the boot menu.
+1. You launched the PopOS! installer and selected the language, keyboard layout, and installation type.
+1. You performed a clean installation by selecting the internal drive and confirming the erase‑and‑install operation.
+1. You reviewed optional information about NVIDIA graphics and confirmed that no additional drivers are required for this course.
+1. You created the parent administrator account, including full name, username, and password.
+1. You selected the drive encryption option and continued without encryption to keep the system simple and reliable.
+1. You waited for the installation to complete and reached the restart stage.
+1. You restarted the computer and removed the USB flash drive at the correct time, using documented recovery steps if needed.
+1. You reached the Sign In screen for the parent administrator account, completing the installation process.
+
+## Next Step
+
+1. You will sign in to the parent administrator account for the first time.
+1. You will connect to the internet and install system updates.
+1. You will prepare the system for creating the child account and setting up the development environment.
+
+
+## Next Step
+
+1. You will create the parent administrator account that controls the computer.
+1. This account will be used only for system management tasks and not for daily use.
