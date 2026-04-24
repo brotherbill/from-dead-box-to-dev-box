@@ -12,7 +12,7 @@ Each item should be completed in order. Do not skip steps.
 
 - [ ] Identify the target machine (the computer that will be rebuilt).
 - [ ] Confirm that all important data on the target machine is either backed up or no longer needed.
-- [ ] Confirm access to a support machine (for example, a PC or Mac) with a web browser, USB port and access to the Internet.
+- [ ] Confirm access to a support machine (for example, a PC or Mac) with a web browser, USB port, and access to the Internet.
 - [ ] Confirm availability of a USB flash drive of sufficient size for the PopOS! image. A USB 3.0 drive is recommended for speed; a USB 2.0 drive will work but the imaging and installation processes will take significantly longer.
 
 ### 2. Download PopOS! image
@@ -54,7 +54,7 @@ Each item should be completed in order. Do not skip steps.
 ### 6. Complete initial PopOS! setup
 
 - [ ] On first boot, complete the initial configuration wizard (language, keyboard, time zone, and network).
-- [ ] Create the **parent administrator account**.
+- [ ] Create the **parent administrator account** (this will be corrected and verified in Step 06).
 - [ ] Sign in using the parent administrator account.
 
 ### 7. Create user accounts
@@ -63,7 +63,7 @@ Each item should be completed in order. Do not skip steps.
 - [ ] Add a **child standard account** (non‑administrator).
 - [ ] Confirm that the child account does not have administrative or sudo privileges.
 - [ ] Add a **parent daily‑use standard account** (optional but recommended).
-- [ ] Log out and sign in to each standard account once to verify access.
+- [ ] Sign out and sign in to each standard account once to verify access.
 
 ### 8. Update the system
 

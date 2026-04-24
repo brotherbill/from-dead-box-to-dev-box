@@ -96,3 +96,19 @@ We will use Rufus, a trusted USB imaging tool for Windows.
 ---
 
 When these steps are complete, the USB flash drive contains a bootable PopOS! installer and is ready for use in the next stage of the process.
+
+---
+
+## Summary of What You Just Completed
+
+1. You inserted the USB flash drive into the support machine.
+1. You downloaded and installed Rufus.
+1. You selected the PopOS! ISO file inside Rufus.
+1. You confirmed the correct USB device was chosen.
+1. You wrote the PopOS! installer image to the USB flash drive.
+1. You safely ejected the USB flash drive.
+
+## What’s Next
+
+1. You will use this USB flash drive to boot the target machine.
+1. The next step will guide you through installing PopOS! on that machine.

@@ -83,3 +83,19 @@ Follow each step in order.
 ---
 
 When these steps are complete, the PopOS! installer file is ready to be written to a USB flash drive in the next stage of the process.
+
+---
+
+## Summary of What You Just Completed
+
+1. You opened a web browser on the support machine.
+1. You navigated to the official PopOS! download page.
+1. You selected the correct PopOS! version for the target machine.
+1. You recorded the checksum for verification.
+1. You downloaded the PopOS! ISO file.
+1. You verified the ISO file using the checksum.
+
+## What’s Next
+
+1. You will write the PopOS! ISO file to a USB flash drive.
+1. This USB flash drive will become the bootable installer for the target machine.

@@ -94,7 +94,7 @@ These steps will be completed in the next document.
 
 ---
 
-## Summary
+## Summary of What You Just Completed
 
 1. You signed in to the parent administrator account.
 1. You connected the computer to the internet.
@@ -102,3 +102,8 @@ These steps will be completed in the next document.
 1. You reviewed optional accessibility settings.
 1. You learned how to update the system using the Terminal if needed.
 1. You prepared the system for creating the child and parent daily‑use accounts.
+
+## What’s Next
+
+1. You will verify and correct the parent administrator account.
+1. You will ensure the Full Name and Username follow the naming rules.

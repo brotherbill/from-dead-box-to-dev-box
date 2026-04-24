@@ -117,7 +117,7 @@
 
 ---
 
-## Summary
+## Summary of What You Just Completed
 
 1. You booted the computer from the PopOS! USB flash drive.
 1. You selected the installation language, keyboard layout, and installation type.
@@ -128,11 +128,7 @@
 1. You restarted and removed the USB at the correct time.
 1. You reached the Sign In screen for the parent administrator account.
 
----
-
-## Next Step
+## What’s Next
 
 1. You will sign in to the parent administrator account for the first time.
-1. You will connect the computer to the internet.
-1. You will install all available system updates.
-1. You will prepare the system for creating the child standard account and the parent daily‑use standard account.
+1. You will complete the initial PopOS! setup steps.
