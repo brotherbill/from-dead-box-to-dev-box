@@ -1,244 +1,124 @@
-## 2026-04-23 08:00 EDT — Completion of 2-day-checklist.md
+# Chat Log for Workflow Execution
+###### C:/dev/repos/from-dead-box-to-dev-box/chat.md
 
-1. The file `00-overview/2-day-checklist.md` was fully drafted, reviewed, and finalized.
-2. The file-location header rule was applied correctly.
-3. The “brain transplant” description was added and aligned with doctrine.
-4. USB 2.0 vs USB 3.0 guidance was clarified.
-5. Execution instructions were updated to require VS Code debugging (F5).
-6. The checklist now meets all tone, clarity, and parent-appropriate requirements.
-7. The document is ready for long-term use in Repo 1.
+### 2026‑04‑23 08:00 EDT — Completion of 2‑day‑checklist.md
+1. Finalized 2‑day‑checklist.md with full doctrine alignment.
+1. Applied file‑location header rule.
+1. Added brain‑transplant description.
+1. Clarified USB 2.0 vs 3.0 guidance.
+1. Updated execution instructions to require VS Code debugging (F5).
+1. Verified tone and parent‑safe language.
+1. Document approved for long‑term use.
 
-Status: COMPLETE.
+### 2026‑04‑23 08:16 EDT — Naming Rule Added for Ordered Markdown Files
+1. Added rule requiring numeric prefixes for ordered Markdown files.
+1. Non‑ordered files must not use numeric prefixes.
+1. Ensures deterministic reading order and repository structure.
 
-## 2026-04-23 08:16 EDT — Naming Rule Added for Ordered Markdown Files
+### 2026‑04‑23 08:17 EDT — Numbering Added to Ordered Markdown Files
+1. Identified 00‑overview as ordered.
+1. Applied numeric prefixes:
+   - 01‑2‑day‑checklist.md  
+   - 02‑download‑popos.md
 
-1. A new documentation rule was defined for Markdown files that must be read or executed in a specific sequence.
-2. Files requiring a defined order must begin with a numeric prefix such as `01-filename.md`.
-3. Files that do not require ordering must not use numeric prefixes.
-4. This rule ensures predictable reading order and consistent repository structure.
+### 2026‑04‑23 08:35 EDT — Branding Rule Added for PopOS!
+1. Added rule requiring **PopOS!** spelling in parent‑facing docs.
+1. Reserved **Pop!_OS** for internal engineering contexts.
 
-Status: COMPLETE.
+### 2026‑04‑23 08:46 EDT — MY_RULES.md Updated
+1. Removed duplicate rule 20.
+1. Confirmed rule 19 governs chat.md formatting.
+1. Ensured numbering continuity.
 
-## 2026-04-23 08:17 EDT — Numbering Added to Ordered Markdown Files
+### 2026‑04‑23 09:06 EDT — MY_RULES.md Reviewed and Updated
+1. Verified rule 19 as authoritative for chat.md.
+1. Confirmed removal of duplicate rule.
+1. Ensured doctrinal consistency.
 
-1. The files in `00-overview` were identified as requiring a specific reading order.
-2. Per the new documentation rule, both files were assigned numeric prefixes.
-3. The updated filenames are:
-   - `01-2-day-checklist.md`
-   - `02-download-popos.md`
-4. This ensures deterministic reading order and consistent repository structure.
+### 2026‑04‑23 09:37 EDT — Updated Section 9 of 05‑install‑popos.md
+1. Refined “Installation complete” section for clarity and tone.
+1. Added controlled‑humanity closing line.
+1. Verified parent‑safe language.
 
-Status: COMPLETE.
-
-## 2026-04-23 08:35 EDT — Branding Rule Added for PopOS!
-
-1. A new documentation rule was added to MY_RULES.md.
-2. Parent‑facing documentation must use the branded spelling **PopOS!**.
-3. The technical spelling **Pop!_OS** is reserved only for internal engineering contexts (package names, commands, technical notes).
-4. This rule prevents drift and ensures consistent branding across all parent‑facing materials.
-
-Status: COMPLETE.
-
-## 2026-04-23 08:46 EDT — MY_RULES.md Updated
-
-1. Duplicate rule 20 was removed from MY_RULES.md.
-2. Rule 19 remains the authoritative rule governing `notes/chat.md` entry headers.
-3. The documentation rules section is now consistent and free of numbering gaps.
-4. Repository doctrine remains deterministic and aligned with operator-grade standards.
-
-Status: COMPLETE.
-
-## 2026-04-23 09:06 EDT — MY_RULES.md Reviewed and Updated
-
-1. Verified that Rule 19 is the single authoritative rule governing `notes/chat.md` formatting.
-1. Confirmed removal of the duplicate rule previously listed as item 20.
-1. Ensured numbering continuity and documentation consistency across the entire MY_RULES.md file.
-1. MY_RULES.md remains aligned with doctrine and ready for continued workflow execution.
-
-Status: COMPLETE.
-
-#### 2026‑04‑23 09:37 EDT — Updated Section 9 of 05-install-popos.md
-
-- Refined the final “Installation complete” section to increase clarity and professionalism while adding a controlled amount of humanity.
-- Replaced the closing line with:  
-  *“The parent has completed a major milestone in preparing the computer, establishing a solid foundation for the work that follows.”*
-- Verified tone compliance with MY_RULES.md and ensured parent‑appropriate, neutral, professional language.
-- Confirmed the file is ready for commit and push.
-
-#### 2026‑04‑23 09:41 EDT — Updated Section 9 of 05-install-popos.md
-
-- Finalized the “Installation complete” section with a more human, professional closing line.
-- Updated the final step to:  
-  *“The parent has completed a major milestone in preparing the computer, establishing a solid foundation for the work that follows.”*
-- Verified tone, structure, and compliance with MY_RULES.md.
-- Confirmed that no changes were made to MY_RULES.md during this update.
-
-# Create the Parent Administrator Account
-###### C:/dev/repos/from-dead-box-to-dev-box/00-overview/06-create-parent-account.md
-
-## 1. Start the computer and sign in
-
-1. Turn on the computer.
-1. When the PopOS! login screen appears, sign in using the administrator account created during installation.
-1. This account will be used only for system administration tasks. Administrator accounts have elevated privileges and should not be used for daily activity. The parent may create a separate standard account later for regular use, and it is recommended to have both an administrator account and a regular user account for safety and convenience.
-
----
-
-## 2. Open the Settings application
-
-1. Click the system menu in the top‑right corner of the screen.
-1. Select **Settings**.
-1. The Settings window will open on the left‑hand navigation panel.
-
----
-
-## 3. Create the permanent parent administrator account
-
-1. In the left‑hand panel, select **Users**.
-1. Unlock the panel by clicking **Unlock** and entering the current administrator password.
-1. Click **Add User**.
-1. Set the following:
-   - **Account Type:** Administrator  
-   - **Full Name:** Parent  
-   - **Username:** parent  
-1. Set a password for the parent account.
-1. Click **Add** to create the account.
-
----
-
-## 4. Sign out and verify the new account
-
-1. Open the system menu in the top‑right corner.
-1. Select **Log Out**.
-1. On the login screen, select the **parent** account.
-1. Sign in using the password created in the previous step.
-1. Confirm that the desktop loads normally and that administrative actions (such as installing updates) are permitted.
-
----
-
-## 5. Confirm account separation
-
-1. The installation‑time administrator account will no longer be used for daily activity.
-1. The parent account will be used for:
-   - installing software  
-   - managing system settings  
-   - creating and supervising the child account  
-   - performing maintenance tasks  
-1. This separation ensures a clean, predictable environment for the child’s development work.
-
----
-
-## 6. Parent account creation complete
-
-1. The parent now has a dedicated administrator account for managing the system.
-1. This establishes a clear separation of responsibilities and prepares the computer for creating the child’s development account.
-1. The parent has completed an important step in setting up a stable and well‑structured learning environment.
+### 2026‑04‑23 09:41 EDT — Finalized Section 9 of 05‑install‑popos.md
+1. Finalized professional closing line.
+1. Verified tone and structure.
+1. No rule changes required.
 
 ### 2026‑04‑23 10:24 EDT — Privilege Model Clarified, 06.md Stabilized
+1. Regenerated 06‑create‑parent‑account.md with corrected Full Name and Username rules.
+1. Clarified privilege model.
+1. Added summary section.
+1. Ensured only one administrator account is created.
+1. Deferred summary retrofits to E2E testing.
 
-- Completed regeneration of **06-create-parent-account.md** with:
-  - Full Name updated to **Mr. Smith (Admin)** for high‑visibility privilege signaling
-  - Username rules clarified (lowercase, dashes allowed, no spaces)
-  - Clear distinction between **Full Name** and **Username**
-  - Removal of ambiguous “parent account” terminology
-  - Clean privilege‑model alignment (installation admin → parent admin → later daily accounts)
-- Added summary section pattern to anchor system state and reduce parent anxiety
-- Confirmed that only **one administrator account** was created in this step
-- Deferred summary retrofits for other markdown files to E2E testing phase
-- System state now stable and deterministic for next steps
-
-### 2026‑04‑23 10:26 EDT — Timestamp Standardization Added to Governance
-
-- Standardized timestamp format approved: `YYYY‑MM‑DD HH:MM ZONE` using 24‑hour clock
-- Seconds removed for clarity and consistency
-- Local timezone (EDT) mandated for all entries
-- This requirement must now be added to **MY_RULES.md** as a new documentation rule
-- All future `notes/chat.md` entries will follow this exact timestamp format
+### 2026‑04‑23 10:26 EDT — Timestamp Standardization Added
+1. Approved timestamp format: `YYYY‑MM‑DD HH:MM ZONE`.
+1. Mandated EDT.
+1. Removed seconds for clarity.
+1. Rule to be added to MY_RULES.md.
 
 ### 2026‑04‑23 10:41 EDT — 07.md Reviewed and Approved
-
-- Completed full doctrine review of **07-create-standard-accounts.md**
-- Confirmed structural compliance with all rules in **MY_RULES.md**
-- Verified placeholder note applies to both parent and student accounts
-- Validated example names (**Best Parent**, **best-parent**, **Power Student**, **power-student**) as compliant placeholders
-- Confirmed privilege separation and deterministic workflow integrity
-- Document approved for commit and push
+1. Completed doctrine review of 07‑create‑standard‑accounts.md.
+1. Verified placeholder rules.
+1. Confirmed privilege separation.
+1. Approved for commit.
 
 ### 2026‑04‑23 10:46 EDT — 06.md Updated and Logged
+1. Added placeholder‑clarification line.
+1. Updated example values.
+1. Ensured alignment with 07.md.
 
-- Added placeholder‑clarification line to **06-create-parent-account.md**
-- Inserted: “Enter the following example values (replace with your actual names):”
-- Updated example values for admin parent:
-  - **Full Name:** BEST PARENT (ADMIN)
-  - **Username:** best-parent-admin
-- Ensured structural and doctrinal consistency with 07.md
-- File is now ready for commit and push
+### 2026‑04‑23 12:20 EDT — download‑popos.md Updated
+1. Added “free and open source” to preamble.
+1. Applied bold‑verb doctrine.
 
-### 2026-04-23 12:20 EDT — ACTION
-Updated preamble in `download-popos.md` to include that PopOS! is free and open source. Applied caTools bold‑verb doctrine across entire document.
+### 2026‑04‑23 12:23 EDT — Step 03 Moved to 20‑Series
+1. Renamed Step 03 to remove it from early parent flow.
+1. Reserved for later reintegration after Steps 00–19.
 
-### CONFIRMATION
-Document updated successfully. Styling and doctrine remain consistent.
+### 2026‑04‑23 13:30 EDT — Styling Pass for 03‑write‑popos‑to‑usb.md
+1. Normalized UI label bolding.
+1. Enforced numbering doctrine.
+1. Ensured parent‑safe tone.
 
-### 2026-04-23 12:23 EDT — ACTION
-Renamed Step 03 to the 20‑series to remove it from the early parent flow and prevent sequencing conflicts. Step 03 will re‑enter the pipeline after Steps 00–19 are finalized.
+### 2026‑04‑23 18:47 EDT — PopOS! Installation Step 8 Recovery Logged
+1. Completed Step 8 with recovery path.
+1. Documented traffic‑circle restart behavior.
+1. Updated Step 8 documentation.
 
-### CONFIRMATION
-Document successfully moved out of the primary flow. Ready to proceed with the next governed step.
+### 2026‑04‑23 18:56 EDT — PopOS! Installation Document Finalized
+1. Completed full review of 05‑install‑popos.md.
+1. Added summary and next‑step section.
+1. Verified tone and numbering.
 
-#### 2026-04-23 13:30 EDT — Styling pass completed for 03-write-popos-to-usb.md
+### 2026‑04‑23 19:45 EDT — First Login and Setup Wizard Completion Logged
+1. Completed first login.
+1. Navigated accessibility prompt.
+1. Reached clean desktop.
+1. Updated 05‑first‑login‑and‑system‑update.md.
 
-- Applied full styling pass to the document.
-- Normalized bolding for UI labels and operator actions.
-- Preserved Markdown numbering doctrine (`1.` for all ordered lists).
-- Ensured parent‑safe tone and consistent formatting.
-- Document is now production‑ready and integrated into the workflow.
+### 2026‑04‑23 17:02 EDT — Reconstruction Cycle Initiated
+1. Operator requested resend of 04.
+1. Assistant delivered 03.
+1. Operator corrected 04.
+1. Assistant confirmed sync.
+1. Operator requested reconstruction mode.
+1. Operator selected logical timestamps + strict reconstruction.
 
-### 2026‑04‑23 18:47 EDT — PopOS! Installation — Step 8 Recovery and Completion — Session Log
+### 2026‑04‑23 17:48 EDT — Filename Correction Logged
+1. Operator corrected filename to 05‑install‑popos.md.
+1. Assistant confirmed workflow sync.
 
-1. Completed Step 8 of the PopOS! installation workflow.
-1. Verified correct behavior when the USB flash drive was not removed during reboot.
-1. Executed recovery path using the traffic‑circle restart icon at the Sign In screen.
-1. Successfully removed the USB flash drive at the correct timing on the second restart.
-1. Updated Step 8 documentation to include the recovery procedure for this scenario.
-1. Reached the Sign In screen for the parent administrator account.
-1. Document confirmed complete and ready for commit and push.
+### 2026‑04‑23 21:11 EDT — 05‑first‑login Restored and Locked
+1. Operator confirmed restoration.
+1. Assistant locked state with fresh entry.
 
-### 2026‑04‑23 18:56 EDT — PopOS! Installation Document Finalization — Session Log
+# Chat Log for Workflow Execution
+###### C:/dev/repos/from-dead-box-to-dev-box/chat.md
 
-1. Completed full review of `05-install-popos.md`.
-1. Added a comprehensive summary and next‑step section aligned with the entire installation workflow.
-1. Verified tone, structure, and numbering against MY_RULES.md.
-1. Confirmed document readiness for commit and push.
-1. System state stable and ready for transition to the next file.
-
-### 2026‑04‑23 19:45 EDT — First Login and Setup Wizard Completion — Session Log
-
-1. Successfully signed in to the parent administrator account for the first time.
-1. Navigated the accessibility prompt and confirmed Screen Reader behavior.
-1. Completed the PopOS! first‑boot setup wizard using default, parent‑safe options.
-1. Reached a clean, empty PopOS! desktop with no errors or blockers.
-1. Document 05-first-login-and-system-update.md updated to reflect real‑world behavior.
-1. System state stable and ready for the next configuration phase.
-
-# chat.md
-###### C:/dev/repos/from-dead-box-to-dev-box/chat.md — 2026-04-23 17:02 EDT
-
-## Operator Log
-
-1. Operator requested resend of 04 md; assistant delivered 03-write-popos-to-usb.md.
-1. Operator clarified that 04.md was incorrect; assistant located and delivered 04-write-popos-summary.md.
-1. Operator provided corrected 04-install-popos.md; assistant confirmed synchronization.
-1. Operator requested review of 05-install-popos.md; assistant validated alignment and correctness.
-1. Operator requested review of 06-create-parent-account.md; assistant identified misalignment and flagged for future E2E dirty testing.
-1. Operator requested latest chat.md; assistant requested clarification on reconstruction mode.
-1. Operator selected Option 2 (logical timestamps) and Option A (Strict Reconstruction).
-1. Assistant generated full reconstructed chat.md with strict formatting and single timestamp on line 2.
-
-# chat.md
-###### C:/dev/repos/from-dead-box-to-dev-box/chat.md — 2026-04-23 17:48 EDT
-
-## Operator Log
-
-1. Operator corrected filename to 05-install-popos.md and confirmed workflow is back in sync.
-1. Operator requested to add new chat.md section; assistant prepared updated operator log entry.
+### 2026‑04‑24 05:51 EDT — Password Separation Doctrine Added to MY_RULES.md
+1. Added new rule requiring different passwords for parent administrator and parent regular accounts.
+1. Specified that passwords must not be reused, patterned, or minimally altered.
+1. Added guidance permitting the use of Bitwarden as a free, open‑source password manager.
+1. Updated MY_RULES.md while preserving numbering integrity and document structure.

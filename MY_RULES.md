@@ -25,6 +25,8 @@
 1. All entries in `notes/chat.md` must use a standardized timestamp format: `YYYY‑MM‑DD HH:MM ZONE` using a 24‑hour clock and the operator’s local timezone. Seconds must not be included.
 1. Use **Sign in** and **Sign out** as the universal terms for authentication actions. Do not use “log in,” “log on,” “sign on,” or “log out” in documentation. This ensures consistency across all operating systems and avoids legacy or ambiguous terminology. Applies to all user‑facing instructions, screenshots, and workflow descriptions.
 
+1. Parents must use **different passwords** for the parent administrator account and the parent regular (daily‑use) account. Passwords must not be reused, patterned, or minimally altered (for example, adding a number or changing one character). This separation protects the administrator account from accidental changes and maintains system stability. Parents may use a password manager such as **Bitwarden** to store passwords securely. Bitwarden is free, open‑source, and helps prevent password mix‑ups or loss.
+
 **Example of required file‑location header:**
 
 ###### from-dead-box-to-dev-box/00-overview/2-day-checklist.md

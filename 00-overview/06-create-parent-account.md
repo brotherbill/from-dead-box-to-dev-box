@@ -41,19 +41,23 @@ This step creates the permanent parent administrator account. This account will 
 
 **Completed in this step:**
 
-1. Created the permanent parent administrator account using example values (**BEST PARENT (ADMIN)**, username **best-parent-admin**).
-1. Verified that the new administrator account appears on the login screen.
-1. Confirmed that the account has administrator privileges.
+1. Created the parent’s regular daily‑use account.
+1. Created the child’s standard account for development work.
+1. Verified that both accounts appear on the login screen.
+1. Confirmed that neither account has administrator privileges.
 
-**Not completed in this step:**
+**Important:**  
+The password for the parent’s regular account must be **different** from the parent administrator password.  
+Do **not** reuse the same password or make a small variation (such as adding a number or changing one character).  
+This protects the administrator account from accidental changes and keeps the system stable.
 
-1. No standard (non‑administrator) accounts were created.
-1. No development tools or learning environments were installed.
-1. No system‑wide settings were changed beyond account creation.
+**Tip:**  
+To keep passwords safe and organized, consider using a password manager such as **Bitwarden**.  
+Bitwarden is free, open‑source, and helps parents store passwords securely so they don’t get mixed up or forgotten.
 
 **Current system state:**
 
-- One administrator account exists (this account).  
-- No standard accounts exist yet (these will be created in Step 07).  
-- Privilege separation is now ready to be completed in the next step.
-
+- One administrator account exists (BEST PARENT (ADMIN)).  
+- One parent daily‑use account exists.  
+- One child development account exists.  
+- Privilege separation is now fully established.
