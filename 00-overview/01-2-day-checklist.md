@@ -54,38 +54,46 @@ Each item should be completed in order. Do not skip steps.
 ### 6. Complete initial PopOS! setup
 
 - [ ] On first boot, complete the initial configuration wizard (language, keyboard, time zone, and network).
-- [ ] Create the primary administrator account (parent/guardian account).
-- [ ] Log in using the administrator account.
+- [ ] Create the **parent administrator account**.
+- [ ] Sign in using the parent administrator account.
 
-### 7. Create a non‑administrative user account
+### 7. Create user accounts
 
 - [ ] Open the system settings for user accounts.
-- [ ] Add a new standard (non‑administrator) user account for the young engineer.
-- [ ] Confirm that this account does not have administrative or sudo privileges.
-- [ ] Log out of the administrator account and log in as the standard user to verify access.
+- [ ] Add a **child standard account** (non‑administrator).
+- [ ] Confirm that the child account does not have administrative or sudo privileges.
+- [ ] Add a **parent daily‑use standard account** (optional but recommended).
+- [ ] Log out and sign in to each standard account once to verify access.
 
 ### 8. Update the system
 
-- [ ] Log in as the administrator account.
-- [ ] Open the system update tool or terminal.
-- [ ] Apply all available operating system updates.
+- [ ] Sign in as the **parent administrator account**.
+- [ ] Open the **COSMIC Store**.
+- [ ] Apply all available updates in **System Packages**.
+- [ ] Apply all remaining updates in the **Updates** tab.
+- [ ] If updates do not begin, run the following command in the Terminal:
+
+      ```
+      sudo apt update && sudo apt upgrade -y
+      ```
+
 - [ ] Reboot the system if required.
 
 ### 9. Install Visual Studio Code
 
 - [ ] Download the appropriate VS Code package for PopOS!.
 - [ ] Install VS Code using the recommended method for the distribution.
-- [ ] Launch VS Code to confirm that it starts correctly for the standard user.
+- [ ] Sign in as the child standard account and launch VS Code to confirm it starts correctly.
 
 ### 10. Install the D toolchain
 
 - [ ] Install the D compiler (for example, DMD or LDC) using the recommended method for PopOS!.
-- [ ] Confirm that the compiler is available on the command line for the standard user.
+- [ ] Confirm that the compiler is available on the command line for the child standard account.
 - [ ] Install the D language extension in VS Code.
 
 ### 11. Lock down VS Code behavior
 
-- [ ] Open VS Code settings for the standard user.
+- [ ] Open VS Code settings for the child standard account.
 - [ ] Disable autocomplete and unsolicited suggestions.
 - [ ] Disable automatic formatting on save.
 - [ ] Ensure that formatting can still be triggered manually on request.
@@ -93,7 +101,7 @@ Each item should be completed in order. Do not skip steps.
 
 ### 12. Verify a simple D program
 
-- [ ] Log in as the standard user.
+- [ ] Sign in as the child standard account.
 - [ ] Create a new folder for D projects.
 - [ ] Create a simple `hello.d` program in VS Code.
 - [ ] Compile the program using the D compiler from the terminal.

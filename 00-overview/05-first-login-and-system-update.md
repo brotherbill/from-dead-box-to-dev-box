@@ -1,66 +1,203 @@
-# First Login and System Update  
-###### C:/dev/repos/from-dead-box-to-dev-box/00-overview/05-first-login-and-system-update.md
+# Install PopOS! on the Computer
+###### C:/dev/repos/from-dead-box-to-dev-box/00-overview/05-install-popos.md
 
-## 1. Sign in to the parent administrator account
+## 1. Start the computer with the USB inserted
 
-1. At the Sign In screen, select the parent administrator account created during installation.
-1. Enter the administrator password.
-1. The desktop will load and display the PopOS! environment.
-
----
-
-## 2. Accessibility Setup (If Screen Reader Appears)
-
-1. Some computers may automatically enable the Screen Reader during the first‑boot setup.
-1. If the Screen Reader begins speaking or the interface appears in high‑contrast mode, this is not an error.
-1. To turn off the Screen Reader:
-   - Select the Screen Reader toggle.
-   - Ensure the toggle is set to Off.
-1. After disabling the Screen Reader, continue with the normal setup flow.
-1. If the Screen Reader does not appear, proceed to the next section without changes.
+1. Insert the PopOS! USB flash drive into the computer.
+1. Press the power button to turn the computer on.
+1. **Immediately begin tapping the boot‑menu key repeatedly.**  
+   - On **Dell** computers, this is usually **F12**.  
+   - On **System76** computers, this is usually **F7**.  
+   - Other computers may use **F10**, **Esc**, or another F‑key.
+1. Keep tapping until the **boot menu** appears.
+1. The boot menu may look unfamiliar, but the next steps will guide you through exactly what to choose.
+   1. Select **UEFI BOOT → UEFI: USB**, if available.  
+   1. Use the **up** and **down arrow** keys to highlight the option.  
+   1. Press **Enter** to continue.
 
 ---
 
-## 3. Connect to the internet
+## 2. Wait for the PopOS! installer to load
 
-1. Check the network icon in the top‑right corner to determine which connection method is available.
-1. If Wi‑Fi is available:
-   - Select the home Wi‑Fi network.
-   - Enter the Wi‑Fi password.
-   - Wait for the connection indicator to confirm internet access.
-1. If Wi‑Fi is not available:
-   - Plug an Ethernet cable from the home router into the computer’s Ethernet port.
-   - The connection will activate automatically.
-   - Confirm the wired‑connection symbol appears in the network icon.
-1. After the computer is connected to the internet, click Next to continue.
+1. The PopOS! loading screen will appear.
+1. After a short wait, the installer window will open.
 
 ---
 
-## 4. Complete the PopOS! First‑Boot Setup Wizard
+## 3. Begin the installation
 
-1. After signing in, PopOS! may show a short setup wizard.
-1. This wizard is normal and is not the installer used earlier.
-1. The screens may include:
-   - Language confirmation  
-   - Keyboard confirmation  
-   - Privacy or telemetry options  
-   - Online accounts (you may skip these)  
-1. Accept the defaults unless you have a specific preference.
-1. Continue clicking Next until the wizard completes and the desktop appears.
+1. The PopOS! installer now looks similar to the setup screens on Windows or macOS.  
+   It will guide you through language, keyboard, and installation choices.
+
+1. Select the **language** for the installation.  
+   (Most families choose **English**.)
+
+1. Select the **keyboard layout**.  
+   (Most families choose **English (US)**.)
+
+1. When asked how you want to install PopOS!, choose **Clean Install**, then click **Clean Install**.  
+   This option erases the computer and installs a fresh copy of PopOS!.
+
+1. Select the drive that PopOS! will be installed on.  
+   1. Typically there is only one drive to choose from.  
+   1. Click **Erase and Install**.
+
+1. The installer may briefly show a “Preparing” or “Setting up” screen.  
+   This is normal and may take a moment.
 
 ---
 
-## 5. Run system updates
+## 4. About NVIDIA graphics (optional information)
 
-1. Open the PopOS! Shop from the dock.
-1. Select the Installed tab.
-1. Click Update All.
-1. Wait for all updates to complete.
-1. If prompted, restart the computer.
+1. Some computers include an NVIDIA graphics card.
+1. PopOS! offers a separate installer with NVIDIA drivers included.
+1. These drivers are not required for this course.
+1. The course focuses on console‑based learning and basic applications.
+1. Ignoring the NVIDIA graphics card has no effect on the D programming experience.
 
 ---
 
-## 6. Prepare for creating the child account
+## 5. Create User Account
 
-1. After updates are complete, remain signed in as the parent administrator.
-1. The next document will guide you through creating the child account and configuring the development environment.
+1. The installer will now ask you to create the first user account.  
+   This account will be the **parent administrator account**.
+
+1. Enter the **Full Name** for the parent.  
+   - Example: **BEST PARENT (ADMIN)**  
+   - Replace this with your actual name, such as **John Smith (ADMIN)**.
+
+1. Enter the **Username** for the parent.  
+   - Example: **best-parent-admin**  
+   - Usernames must be lowercase and contain no spaces.  
+   - Replace this with your actual username, such as **john-smith-admin**.
+
+1. Click **Next** to continue to the password page.
+
+### Create the Administrator Password
+
+1. Enter a **password** for the parent administrator account.  
+   This password will be required for installing software and making system changes.
+
+   **Minimum password requirements:**  
+   - At least **8 characters**  
+   - Contains **letters and numbers**  
+   - Not easily guessable
+
+   **Recommended password requirements:**  
+   - At least **12 characters**  
+   - Contains **uppercase**, **lowercase**, **numbers**, and **symbols**  
+   - Not reused from any other device or online account  
+   - Easy for the parent to remember but hard for others to guess
+
+1. Enter the password again in **Confirm Password**.
+
+1. Click **Next** or **Continue** to proceed.
+
+### Important information about the administrator account
+
+1. This account has **enhanced system privileges**.  
+   It can install software, change system settings, manage users, and perform maintenance tasks.
+
+1. Because it has elevated privileges, it is **highly desirable to hackers**.  
+   If someone gains access to this account, they can control the entire computer.
+
+1. For safety, the administrator account should be used **only** when performing system administration tasks that require elevated privileges.  
+   Daily use should be done from a standard account.
+
+1. When you are finished performing administrative tasks, **sign out** of the administrator account and return to your normal user account.
+
+---
+
+## 6. Drive Encryption
+
+1. The installer will now ask whether you want to enable drive encryption.
+
+1. Drive encryption protects data if the computer is lost or stolen.  
+   It requires entering a password before the operating system can start.
+
+1. For a personal computer used for learning and development, drive encryption is **not required**.  
+   It increases system complexity and introduces additional points of failure.
+
+1. Minimum guidance for parents:  
+   - Encryption is optional.  
+   - Encryption requires an additional password at startup.  
+   - Losing the encryption password results in permanent data loss.
+
+1. Recommended guidance for this workflow:  
+   - Select **“Don’t Encrypt”** to keep the system simple and reliable.  
+   - This avoids extra prompts and reduces the chance of startup issues.
+
+1. Click **Next** or **Continue** to proceed without encryption.
+
+---
+
+## 7. Wait for the installation to complete
+
+1. The installer will copy files and configure the system.
+1. This may take several minutes while the progress bar advances through several stages.
+1. When the installation is complete, the installer will display the **Continue Setting Up** page.
+
+---
+
+## 8. Restart and **then** remove the USB drive
+
+1. Click **Restart Device**.
+
+1. When the screen goes dark, **immediately** remove the USB flash drive.  
+   - If the USB stays in too long, the computer may boot from it again.  
+   - This step is timing‑sensitive and may take a couple of tries.
+
+1. **Do not remove the USB first and then click Restart Device.**  
+   Removing it early can cause the installer to freeze or fail to restart.
+
+1. **If you forgot to remove the USB during reboot:**  
+   - The computer may still reach the **Sign In** screen.  
+   - Click the **traffic‑circle icon** (the circular arrow) to restart.  
+   - When the screen goes dark, remove the USB flash drive.
+
+1. **If the system crashed or froze because the USB was removed too early:**  
+   - Reinsert the USB flash drive.  
+   - Boot from the USB again.  
+   - Resume at **Step 1** of this guide.  
+   - No harm is done; the installation process will reset cleanly.
+
+1. The computer will now start from the internal drive.
+
+---
+
+## 9. Installation complete
+
+1. The machine will reboot.  
+   You may see fast‑moving system text flash across the screen.  
+   This is normal for Linux during startup.
+
+1. After a short time, the **Sign In** screen will appear for the parent administrator account.
+
+1. **Do not sign in yet.**  
+   The next document will guide the parent through the correct first‑login procedure.
+
+1. The computer is now running a clean installation of PopOS!.  
+   The system is ready for post‑installation configuration, including creating the child standard account, creating the parent daily‑use standard account, installing development tools, and enabling optional parental controls.
+
+---
+
+## Summary
+
+1. You started the computer from the PopOS! USB flash drive using the boot menu.
+1. You launched the PopOS! installer and selected the language, keyboard layout, and installation type.
+1. You performed a clean installation by selecting the internal drive and confirming the erase‑and‑install operation.
+1. You reviewed optional information about NVIDIA graphics.
+1. You created the parent administrator account.
+1. You selected the drive encryption option and continued without encryption.
+1. You waited for the installation to complete and reached the restart stage.
+1. You restarted the computer and removed the USB flash drive at the correct time.
+1. You reached the Sign In screen for the parent administrator account.
+
+---
+
+## Next Step
+
+1. You will sign in to the parent administrator account for the first time.
+1. You will connect the computer to the internet.
+1. You will install all available system updates.
+1. You will prepare the system for creating the child standard account and the parent daily‑use standard account.

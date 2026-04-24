@@ -57,6 +57,18 @@
 
 ---
 
+# Terminal Usage Doctrine
+
+1. The Terminal is a standard, approved tool for all young‑engineer workflows.
+1. GUI instructions remain primary when appropriate, but every workflow may include a Terminal path.
+1. Terminal commands must be explicit, copy‑safe, minimal, and deterministic.
+1. No Terminal command may be implied; all commands must be shown in full.
+1. Terminal fallbacks are permitted and encouraged when GUI tools stall or obscure system state.
+1. Terminal usage must never be framed as “advanced” or “optional”; it is a normal part of the course.
+1. All Terminal instructions must avoid jargon unless defined in the same step.
+
+---
+
 # Language Reference Rules
 
 1. Other programming languages may be referenced when relevant.
