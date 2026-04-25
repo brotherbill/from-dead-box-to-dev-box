@@ -163,3 +163,17 @@
 - Install button changed to **Uninstall**, confirming successful installation  
 - Verified DMD installation using `dmd --version` in Terminal
 
+## 2026-04-24 22:17 EDT — Renamed Parent Folder and LOCKED DOWN
+
+- Renamed the parent folder containing steps 01–11 and 20  
+- Old name: `overview`  
+- New name: `guided-assembly`  
+- New name reflects the true purpose: a guided, step-by-step assembly of the base D programming environment
+
+## 2026-04-24 22:49 EDT — Updated Step 11 Verification Method
+
+- Removed the obsolete Command Palette verification instructions  
+- Added the new verification procedure using Terminal → New Terminal  
+- Included Escape‑to‑dismiss‑suggestions step to maintain VS Code lockdown  
+- Verified that `dmd --version` provides a deterministic confirmation of compiler availability  
+- Step 11 is now updated and locked down
