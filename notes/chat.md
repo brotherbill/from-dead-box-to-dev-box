@@ -153,3 +153,13 @@
 - Updated the Summary sections in `09-install-vscode.md` to match required Header‑2 format.
 - Confirmed all VS Code lockdown settings are present and correct prior to introducing D language.
 - No additional changes were required.
+
+## 2026-04-24 22:06 EDT — Step 10 Completed (Install DMD)
+
+- Navigated to https://dlang.org/download.html#dmd  
+- Downloaded the DMD x86_64 `.deb` package  
+- Opened the installer and authenticated as the parent administrator  
+- Installer progress bar appeared and disappeared  
+- Install button changed to **Uninstall**, confirming successful installation  
+- Verified DMD installation using `dmd --version` in Terminal
+
