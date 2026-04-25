@@ -177,3 +177,11 @@
 - Included Escape‑to‑dismiss‑suggestions step to maintain VS Code lockdown  
 - Verified that `dmd --version` provides a deterministic confirmation of compiler availability  
 - Step 11 is now updated and locked down
+
+## 2026-04-25 06:21 EDT — Completed Guided‑Assembly Folder Migration
+
+- Removed all remaining `00-overview` folder references from line‑2 headers  
+- Regenerated each document with the correct `guided-assembly` path  
+- Ensured every file now uses a Windows‑style absolute path beginning with `C:/`  
+- Verified that all regenerated files comply with MY_RULES.md (headers, tone, ordering, stability)  
+- Guided‑assembly documentation set is now consistent, deterministic, and locked down

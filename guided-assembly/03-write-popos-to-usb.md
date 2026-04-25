@@ -1,5 +1,5 @@
 # Write PopOS! to a USB Flash Drive
-###### from-dead-box-to-dev-box/00-overview/03-write-popos-to-usb.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/03-write-popos-to-usb.md
 
 This document guides a parent or guardian through writing the PopOS! installer image onto a USB flash drive. This USB drive will later be used to install PopOS! on the target machine. These steps are performed on a separate support machine that already works and has access to the Internet.
 
@@ -21,20 +21,20 @@ We will use Rufus, a trusted USB imaging tool for Windows.
 
 1. Go to the official Rufus website:  
    https://rufus.ie/
-1. Click the **Download** menu at the top of the page.
-1. Download the installer version of Rufus (not the portable version).  
+1. **Click** the **Download** menu at the top of the page.
+1. **Download** the installer version of Rufus.  
    - Example: `rufus-4.13.exe` (as of April 2026)
-1. When the Save dialog appears, save the installer to:  
+1. When the Save dialog appears, **save** the installer to:  
    `C:\dev\quarantine\`
-1. Run the installer from `C:\dev\quarantine\` and complete the installation.
-1. After installation, open **Rufus** from the Start Menu.
+1. **Run** the installer from `C:\dev\quarantine\` and complete the installation.
+1. After installation, **open** Rufus from the Start Menu.
 1. Pause here. Rufus is now installed and ready for use in the next step.
 
 ---
 
 ## 3. Configure Rufus and select the PopOS! ISO file
 
-1. In Rufus, look for the field labeled **Device**.  
+1. In Rufus, locate the field labeled **Device**.  
    - Confirm that the USB flash drive you inserted is shown here.  
    - If the wrong device is shown, choose the correct USB drive from the dropdown.
 
@@ -42,8 +42,8 @@ We will use Rufus, a trusted USB imaging tool for Windows.
    - It should show **Disk or ISO image**.
 
 1. Click the main **SELECT** button (the left side of the split button).  
-   - This immediately opens the file selection dialog.  
-   - If you click the small arrow on the right side instead, a menu appears with **SELECT** and **DOWNLOAD**. Choose **SELECT** if this happens.
+   - This opens the file selection dialog.  
+   - If you click the small arrow on the right side instead, choose **SELECT** from the menu.
 
 1. In the file selection window, go to:  
    `C:\dev\quarantine\`
@@ -55,12 +55,11 @@ We will use Rufus, a trusted USB imaging tool for Windows.
 1. Click **Open**.
 
 1. If Rufus shows a warning about the ISO being an **ISOHybrid** image, click **OK**.  
-   This is normal for PopOS! and safe to continue.
+   This is normal for PopOS!.
 
 1. Confirm that Rufus now shows the selected ISO file under **Boot selection**.
 
-1. Pause here. The ISO is selected and Rufus is configured.  
-   The next step will write the installer to the USB flash drive.
+1. Pause here. The ISO is selected and Rufus is configured.
 
 ---
 
@@ -107,6 +106,8 @@ When these steps are complete, the USB flash drive contains a bootable PopOS! in
 1. You confirmed the correct USB device was chosen.
 1. You wrote the PopOS! installer image to the USB flash drive.
 1. You safely ejected the USB flash drive.
+
+---
 
 ## What’s Next
 

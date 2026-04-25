@@ -1,5 +1,5 @@
 # 07 — Create Standard Accounts
-###### C:/dev/repos/from-dead-box-to-dev-box/07-create-standard-accounts.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/07-create-standard-accounts.md
 
 # Create Standard Accounts
 
@@ -17,7 +17,7 @@ If the parent will not use this computer, do not create a parent standard accoun
 
 Create this account only if the parent will personally use this computer.
 
-1. Press the Super key, type “Settings”, then press Enter.
+1. Press the **Super** key, type **Settings**, then press **Enter**.
 1. Select **System & accounts → Users**.
 1. Click **Add User**.
 1. Enter example values (replace with your actual names):
@@ -48,7 +48,7 @@ If the parent will not use this computer, skip this section.
 1. Click the **top‑right system menu**, then click the **right‑most Power On/Off symbol**.
 1. Click **Sign out**.
 1. When the confirmation dialog appears, click **Confirm**.
-1. On the Sign in screen, confirm that you see the accounts you created.
+1. On the **Sign In** screen, confirm that you see the accounts you created.
 1. Sign in to each account once to confirm that they open successfully.
 
 ---
@@ -57,7 +57,7 @@ If the parent will not use this computer, skip this section.
 
 1. Created the student’s standard account.
 1. Optionally created a parent standard account (only if needed).
-1. Verified that all created accounts appear on the Sign in screen.
+1. Verified that all created accounts appear on the Sign In screen.
 1. Ensured that all accounts created in this step are standard (non‑administrator).
 
 ---

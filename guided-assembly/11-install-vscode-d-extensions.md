@@ -1,5 +1,5 @@
 # 11 — Install the D Extensions for Visual Studio Code
-###### C:/dev/repos/from-de-dead-box-to-dev-box/11-install-vscode-d-extensions.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/11-install-vscode-d-extensions.md
 
 # Install the D Extensions for Visual Studio Code
 
@@ -13,35 +13,30 @@ Only the parent administrator account may install extensions.
 ## Install the D Language Extensions
 
 1. Ensure you are using the **parent administrator account**.
-
 1. Open **Visual Studio Code**.
-
 1. On the left side of the window, click the **Extensions** icon.  
    It looks like four squares arranged in a grid.
+1. In the search box at the top of the Extensions panel, type:
 
-In the search box at the top of the Extensions panel, type:
+   ```
+   Dlang
+   ```
 
-```
-`Dlang`
-```
+1. Locate the extension named:
 
-Locate the extension named:
+   ```
+   D Programming Language (code-d) (by WebFreak)
+   ```
 
-```
-D Programming Language (code-d) (by WebFreak)
-```
-
-Click **Install**.
+1. Click **Install**.
 
 ---
 
 ## Verify the Extensions
 
 1. In the top menu, select **Terminal → New Terminal**.
-
 1. Press **Escape** to dismiss all suggestions.  
    This removes the inline help prompts.
-
 1. Type the following command:
 
    ```
@@ -55,8 +50,8 @@ Click **Install**.
 
 ## Summary of What You Just Completed
 
-1. Opened Visual Studio Code.  
-1. Installed the **D Programming Language (code-d)** extension.  
+1. Opened Visual Studio Code.
+1. Installed the **D Programming Language (code-d)** extension.
 1. Verified that Visual Studio Code can detect the DMD compiler.
 
 ---

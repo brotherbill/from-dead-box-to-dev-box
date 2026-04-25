@@ -1,5 +1,5 @@
 # 09 — Install Visual Studio Code
-###### C:/dev/repos/from-dead-box-to-dev-box/09-install-vscode.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/09-install-vscode.md
 
 # Install Visual Studio Code
 
@@ -22,120 +22,95 @@ PopOS! inherits these characteristics, which makes it a reliable base for young�
 
 ## Install Visual Studio Code
 
-1. Ensure you are using the **parent administrator account**, which is required for software installation. The young engineer account does not have permission to install software.
+1. Ensure you are using the **parent administrator account**, which is required for software installation.
 1. Open the **web browser**.
 1. Navigate to the official Visual Studio Code download page:  
    https://code.visualstudio.com/
 1. Click **Download for Linux (.deb)**.
 1. When the `.deb` package finishes downloading, open it. You may open it by **right‑click → Open** or by **double‑clicking** the file.
-1. A window will appear showing **“code”** and the tagline **“Code editing. Redefined.”** with a large **Install** button. Click the **Install** button to begin installation.
-1. When the system prompts for authentication, enter the parent administrator password to continue.
+1. A window will appear showing **“code”** and the tagline **“Code editing. Redefined.”** with a large **Install** button. Click **Install**.
+1. When the system prompts for authentication, enter the parent administrator password.
 1. A progress bar and percentage will appear.  
    **When they complete, the window will return to its original layout without a confirmation message.**
-1. **This silent return to the original layout means the installation is finished.**
+1. This silent return indicates that installation is complete.
 
 ---
 
 ## Launch Visual Studio Code
 
-1. Press the Super key.
+1. Press the **Super** key.
 1. Type **Visual Studio Code**.
-1. Press Enter to launch it.
+1. Press **Enter** to launch it.
 
 ---
 
 ## Close Unnecessary Tabs
 
-1. Close any tabs that Visual Studio Code opens automatically, including the **Welcome** tab or any other informational tabs.  
+1. Close any tabs that Visual Studio Code opens automatically, including the **Welcome** tab or any informational tabs.
 1. Only the main editor window should remain open.
 
 ---
 
 ## Install Required Non‑D Extensions
 
-These extensions are selected because they support core engineering workflows without introducing language‑specific behavior. They provide GitHub integration, version‑control visibility, Markdown editing, YAML support, and consistent formatting rules. No D‑language extensions are installed at this stage to maintain a clean, predictable environment.
+These extensions support core engineering workflows without introducing language‑specific behavior. No D‑language extensions are installed at this stage.
 
-1. In Visual Studio Code, open the **Extensions** panel. You may open it by clicking the **square‑icon sidebar button** on the left side of the window or by pressing **Ctrl+Shift+X**.
-1. After opening the Extensions panel, wait a few seconds for it to stabilize before proceeding.
+1. Open the **Extensions** panel using the sidebar button or **Ctrl+Shift+X**.
+1. Wait a few seconds for the panel to stabilize.
 1. Install the following extensions:
-   - **GitHub Pull Requests** (by GitHub).  
-     When installing an extension, always click the **Install** button in the large right‑hand pane.  
-     Do not use the small Install button in the left sidebar, as it is close to other Install buttons and may result in installing the wrong extension.
-   - **GitHub Repositories** (by GitHub)
-   - **GitLens — Git supercharged** (by GitKraken)
-   - **Markdown All in One** (by Yu Zhang)
-   - **YAML** (by Red Hat)
-   - **EditorConfig** (by EditorConfig)
-1. Wait for each extension to finish installing before proceeding.
-
-Do not switch any extension to the **Pre‑release** version. Always use the stable Release version. The Release version may have fewer features and known bugs, but these bugs are documented and we know how to work around them. Pre‑release versions are not stable, may change without notice, and can break the deterministic environment required for young‑engineer workflows.
-
-If you see an alert asking whether you trust the publisher (for example, “GitKraken” or another well‑known publisher), click **Trust Publisher & Install**. These extensions are curated, intentionally selected tools, and we trust their publishers in this controlled environment.
+   - **GitHub Pull Requests** (GitHub)  
+     Always click the **Install** button in the large right‑hand pane.
+   - **GitHub Repositories** (GitHub)
+   - **GitLens — Git supercharged** (GitKraken)
+   - **Markdown All in One** (Yu Zhang)
+   - **YAML** (Red Hat)
+   - **EditorConfig** (EditorConfig)
+1. Wait for each extension to finish installing before continuing.
+1. Do not switch any extension to the **Pre‑release** version.
+1. If prompted to trust a publisher, click **Trust Publisher & Install**.
 
 ---
 
 ## Configure VS Code Behavior
 
-1. Open **Settings**.
-   - Click the **gear icon** in the bottom‑left corner of Visual Studio Code.
-   - In the menu that appears, click **Settings**.
-   - When the Settings window opens, make it **full screen** to reduce distractions and ensure all options are visible.
+1. Open **Settings** using the gear icon in the bottom‑left corner.
+1. Make the Settings window **full screen**.
+1. Use the **Search settings** bar for each configuration step.
 
-1. Move to the **Settings search bar**.
-   - At the very top of the Settings window, click inside the **Search settings** bar.
-   - The cursor should be blinking. All remaining steps will tell you exactly what to type.
+### Disable autocomplete‑related features
 
-1. Disable autocomplete‑related features.
+**A — Disable Quick Suggestions (Terminal autocomplete source)**  
+1. Search for: **suggest quick**  
+1. Locate **Terminal › Integrated › Suggest: Quick Suggestions**.  
+1. Turn **Commands**, **Arguments**, and **Unknown** **off**.
 
-   **Step A — Disable Quick Suggestions (Terminal autocomplete source)**  
-   - In the search bar, type: **suggest quick**  
-   - Scroll until you find:  
-     **Terminal › Integrated › Suggest: Quick Suggestions**  
-   - Under this section, ensure all three items are **off**:  
-     - **Commands** → off  
-     - **Arguments** → off  
-     - **Unknown** → off  
-   - These may already be off. If so, no action is required.
+**B — Disable Suggest On Trigger Characters**  
+1. Clear the search bar.  
+1. Search for: **trigger**  
+1. Find **Editor: Suggest On Trigger Characters**.  
+1. Turn this **off**.
 
-   **Step B — Disable Suggest On Trigger Characters**  
-   - Clear the search bar.  
-   - Type: **trigger**  
-   - Find **Editor: Suggest On Trigger Characters**.  
-   - **Turn this OFF.**  
-     The text shown in Visual Studio Code is:  
-     **“Controls whether suggestions should automatically show up when typing trigger characters.”**  
-     Matching this text exactly helps confirm that you are in the correct location.  
-     Turning this setting **off** prevents VS Code from showing suggestions unless the user explicitly requests them.
+**C — Disable Parameter Hints**  
+1. Clear the search bar.  
+1. Search for: **parameter hints**  
+1. Find **Editor › Parameter Hints: Enabled**.  
+1. Turn this **off**.
 
-   **Step C — Disable Parameter Hints**  
-   - Clear the search bar.  
-   - Type: **parameter hints**  
-   - Find **Editor › Parameter Hints: Enabled**.  
-   - **Turn this OFF.**  
-     The text shown in Visual Studio Code is:  
-     **“Enables a pop-up that shows parameter documentation and type information as you type.”**  
-     Matching this text exactly helps confirm that you are in the correct location.  
-     Turning this setting **off** prevents VS Code from showing parameter pop‑ups while typing.
+### Disable automatic formatting on save
 
-1. Disable automatic formatting on save.
-   - Clear the search bar.  
-   - Type: **format on save**  
-   - Find **Editor: Format On Save**.  
-   - Ensure it is **unchecked**.  
-     The text shown in Visual Studio Code is:  
-     **“Format a file on save. A formatter must be available and the editor must not be shutting down. When Files: Auto Save is set to afterDelay, the file will only be formatted when saved explicitly.”**  
-     Leave this **off** so formatting only occurs when explicitly triggered.
+1. Clear the search bar.  
+1. Search for: **format on save**  
+1. Find **Editor: Format On Save**.  
+1. Ensure it is **unchecked**.
 
-1. Disable automatic extension recommendations.
-   - Clear the search bar.  
-   - Type: **recommendations**  
-   - Find **Extensions: Ignore Recommendations**.  
-   - **Leave this unchecked.**  
-     The text shown in Visual Studio Code is:  
-     **“When enabled, the notifications for extension recommendations will not be shown.”**  
-     Leaving this unchecked allows harmless notifications that reassure the user they are in the correct context.
-   - Find **Extensions: Show Recommendations Only On Demand**.  
-   - Turn this **on**.
+### Disable automatic extension recommendations
+
+1. Clear the search bar.  
+1. Search for: **recommendations**  
+1. Find **Extensions: Ignore Recommendations**.  
+1. Leave this **unchecked**.  
+1. Find **Extensions: Show Recommendations Only On Demand**.  
+1. Turn this **on**.
 
 ---
 

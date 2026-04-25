@@ -1,7 +1,7 @@
 # Get Started With PopOS!
-###### from-dead-box-to-dev-box/00-overview/03-get-started-with-popos.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/20-get-started-with-popos.md
 
-This guide is used **after** the computer has been fully rebuilt and PopOS! is installed, updated, and ready for daily use. At this point, the young engineer now has a clean, reliable system with no distractions and no unnecessary software. This document helps them become comfortable using PopOS! by connecting what they already know from Windows or macOS to the equivalent tools in PopOS!.
+This guide is used **after** the computer has been fully rebuilt and PopOS! is installed, updated, and ready for daily use. At this point, the young engineer has a clean, reliable system with no distractions and no unnecessary software. This document helps them become comfortable using PopOS! by connecting what they already know from Windows or macOS to the equivalent tools in PopOS!.
 
 The goal is simple: help the young engineer feel at home right away.
 
@@ -13,7 +13,7 @@ PopOS! includes a global search box that works the same way as the search tools 
 
 **How to open it:**
 
-1. Press the **Home** key. (This key may look like a set of windows on a PC, a cloverleaf on a Mac, or a Home icon on a generic keyboard.)  
+1. Press the **Super** key.  
 2. Start typing the name of anything you want to open:
    - apps  
    - settings  
@@ -30,9 +30,9 @@ PopOS! includes a built‑in file manager called **Files**.
 
 **How to open it:**
 
-1. Press the **Home** key.  
+1. Press the **Super** key.  
 2. Type **Files**.  
-3. Press Enter.
+3. Press **Enter**.
 
 **What it can do:**
 
@@ -52,9 +52,9 @@ PopOS! includes a terminal for advanced tasks. It is not required for everyday u
 
 **How to open it:**
 
-1. Press the **Home** key.  
+1. Press the **Super** key.  
 2. Type **Terminal**.  
-3. Press Enter.
+3. Press **Enter**.
 
 The terminal allows engineers to run commands, install tools, and automate tasks.
 
@@ -66,9 +66,9 @@ PopOS! includes a modern web browser by default.
 
 **How to open it:**
 
-1. Press the **Home** key.  
+1. Press the **Super** key.  
 2. Type **Browser** or **Firefox**.  
-3. Press Enter.
+3. Press **Enter**.
 
 From here, the young engineer can:
 
@@ -86,9 +86,9 @@ PopOS! has a clean, simple Settings app.
 
 **How to open it:**
 
-1. Press the **Home** key.  
+1. Press the **Super** key.  
 2. Type **Settings**.  
-3. Press Enter.
+3. Press **Enter**.
 
 **Inside Settings, you can adjust:**
 
@@ -123,7 +123,7 @@ PopOS! supports workspaces, which are like extra desktops you can switch between
 
 **How to open the workspace view:**
 
-1. Press the **Home** key.  
+1. Press the **Super** key.  
 2. Click the workspace thumbnails on the right side.
 
 This is optional but helpful for staying organized.

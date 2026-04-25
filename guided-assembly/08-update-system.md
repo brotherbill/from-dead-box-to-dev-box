@@ -1,5 +1,5 @@
 # 08 — Update the System
-###### C:/dev/repos/from-dead-box-to-dev-box/08-update-system.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/08-update-system.md
 
 # Update the System
 
@@ -10,7 +10,7 @@ This step ensures the operating system is fully updated before any additional so
 ## Apply All Available Updates Using COSMIC Store
 
 1. Sign in to the parent administrator account.
-1. Press the Super key, type **Store**, then press Enter.
+1. Press the **Super** key, type **Store**, then press **Enter**.
 1. In the left panel, select **Updates**.
 1. Review the list of available updates.
 1. Click **Update All**.
@@ -23,9 +23,11 @@ This step ensures the operating system is fully updated before any additional so
 
 1. Open the **Terminal** application.
 1. Run the following command to update the system:
+
    ```
    sudo apt update && sudo apt full-upgrade -y
    ```
+
 1. Enter the administrator password when prompted.
 1. Restart the system if the terminal indicates that a restart is required.
 
