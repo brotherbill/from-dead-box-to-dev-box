@@ -1,0 +1,49 @@
+#!/usr/bin/env bash
+###### C:/dev/repos/from-dead-box-to-dev-box/bin/clone-d-project
+
+set -euo pipefail
+
+log() { printf '%s\n' "$*" >&2; }
+
+fail() {
+    printf 'ERROR: %s\n' "$1" >&2
+    exit 1
+}
+
+SOURCE="${1-}"
+TARGET_PARENT="${2-}"
+TARGET_NAME="${3-}"
+
+[ -z "$SOURCE" ] && fail "Missing <source-project-path>."
+[ -z "$TARGET_PARENT" ] && fail "Missing <target-parent-path>."
+[ -z "$TARGET_NAME" ] && fail "Missing <target-project-name>."
+
+[ ! -d "$SOURCE" ] && fail "Source project does not exist: $SOURCE"
+[ ! -f "$SOURCE/dub.json" ] && fail "Source project missing dub.json: $SOURCE"
+
+[ ! -d "$TARGET_PARENT" ] && fail "Target parent path does not exist: $TARGET_PARENT"
+
+TARGET="$TARGET_PARENT/$TARGET_NAME"
+
+[ -e "$TARGET" ] && fail "Target already exists: $TARGET"
+
+cp -R "$SOURCE" "$TARGET"
+
+# Rewrite dub.json project name to match clone name
+if [ -f "$TARGET/dub.json" ]; then
+    sed -i "s|\"name\": \".*\"|\"name\": \"$TARGET_NAME\"|" "$TARGET/dub.json"
+fi
+
+
+if [ -f "$TARGET/rca.json" ]; then
+    sed -i "s|\"project_path\": \".*\"|\"project_path\": \"$TARGET\"|" "$TARGET/rca.json"
+    sed -i "s|\"project_name\": \".*\"|\"project_name\": \"$TARGET_NAME\"|" "$TARGET/rca.json"
+fi
+
+if [ -f "$TARGET/JOURNAL.md" ]; then
+    printf '\n## Clone Event\n1. Project cloned into %s\n' "$TARGET" >> "$TARGET/JOURNAL.md"
+fi
+
+log "Project cloned successfully: $TARGET"
+
+# End of Document

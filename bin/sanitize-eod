@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+###### C:/dev/repos/from-dead-box-to-dev-box/bin/sanitize-eod
+
+set -euo pipefail
+
+fail() {
+    printf 'ERROR: %s\n' "$1" >&2
+    exit 1
+}
+
+FILE="${1-}"
+[ -z "$FILE" ] && fail "Missing <file>."
+[ ! -f "$FILE" ] && fail "File does not exist: $FILE"
+
+sed -i ':a;/^\n*$/{$d;N;ba}' "$FILE"
+
+LAST_LINE="$(tail -n 1 "$FILE")"
+[ "$LAST_LINE" != "# End of Document" ] && printf '\n# End of Document\n' >> "$FILE"
+
+# End of Document

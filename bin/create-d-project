@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+###### C:/dev/repos/from-dead-box-to-dev-box/bin/create-d-project
+
+set -euo pipefail
+
+fail() {
+    printf 'ERROR: %s\n' "$1" >&2
+    exit 1
+}
+
+NAME="${1-}"
+TARGET_PARENT="${2-}"
+
+[ -z "$NAME" ] && fail "Missing <project-name>."
+[ -z "$TARGET_PARENT" ] && fail "Missing <target-parent-path>."
+
+[ ! -d "$TARGET_PARENT" ] && fail "Target parent path does not exist: $TARGET_PARENT"
+
+TARGET="$TARGET_PARENT/$NAME"
+
+[ -e "$TARGET" ] && fail "Target already exists: $TARGET"
+
+mkdir -p "$TARGET/src"
+
+cat > "$TARGET/dub.json" <<EOF
+{
+    "name": "$NAME",
+    "targetType": "executable",
+    "description": "$NAME project"
+}
+EOF
+
+cat > "$TARGET/rca.json" <<EOF
+{
+    "project_name": "$NAME",
+    "project_path": "$TARGET"
+}
+EOF
+
+cat > "$TARGET/JOURNAL.md" <<EOF
+# JOURNAL
+
+## Project Created
+1. Project initialized at $TARGET
+EOF
+
+cat > "$TARGET/src/main.d" <<EOF
+import std.stdio;
+
+void main()
+{
+    writeln("Hello from $NAME");
+}
+EOF
+
+printf 'Project created successfully: %s\n' "$TARGET"
+
+# End of Document

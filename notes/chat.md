@@ -185,3 +185,31 @@
 - Ensured every file now uses a Windows‑style absolute path beginning with `C:/`  
 - Verified that all regenerated files comply with MY_RULES.md (headers, tone, ordering, stability)  
 - Guided‑assembly documentation set is now consistent, deterministic, and locked down
+
+
+## 2026-05-01 — clone-d-project identity rewrite fix installed and repo-synced
+
+### Summary
+- Verified working copy of `clone-d-project.edit` on Benny’s Ubuntu box.
+- Installed the script into `/bin` using admin + sudo (correct permissions).
+- Performed a real clone test (`silly-test-clone1`) confirming:
+  - dub.json name rewritten correctly
+  - binary identity matches clone name
+  - VS Code F5 workflow works for students
+- Synced repo **from the installed /bin version**, not the working copy.
+- Used RealVNC Viewer (F8 → File Transfer) to pull `/bin/clone-d-project` into:
+  `C:\dev\repos\from-dead-box-to-dev-box\bin\clone-d-project`
+- Repo now reflects the authoritative installed script.
+
+### Invariants Established
+- Installed script = repo script = student-facing script.
+- Identity rewrite invariant holds for all clones.
+- F5 debug workflow now “just works” for students.
+- Eliminates parent tech-support calls.
+
+### Next Steps
+- Continue pipeline validation with hello-avalonia.
+- Begin Silly-Strings reference lineage.
+
+###### End of Section
+

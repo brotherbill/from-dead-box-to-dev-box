@@ -1,5 +1,5 @@
 # Download PopOS!
-###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/download-popos.md
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/download-ubuntu-22.md
 
 PopOS! is a strong choice for young engineers because it is simple, reliable, and designed to stay out of the way. It provides a clean environment where the computer behaves predictably, without distractions, advertisements, or unnecessary software. PopOS! is also well‑supported, secure, and works well on older computers, giving them a fresh start and extending their useful life.
 

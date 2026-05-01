@@ -3,16 +3,14 @@
 
 ## Purpose of This Step
 
-This step validates that the PopOS! workstation can:
+This step **builds and validates** the full D‑language development pipeline.
 
-- create a D project,
-- build it,
-- run it under the debugger,
-- hit a breakpoint,
-- display variables,
-- and complete the entire **edit → F5 → breakpoint** loop in approximately one second.
+It creates the project structure.  
+It configures Visual Studio Code for debugging.  
+It installs the required tools.  
+It prepares the workstation to run the complete **edit → F5 → breakpoint** loop in approximately one second.
 
-This is the first full‑system debugging validation.  
+This step constructs the environment that all later steps depend on.  
 It confirms that the development environment is ready for the apprentice.
 
 ---
@@ -40,3 +38,19 @@ The administrator account returns to administration‑only duties.
 
 We create a parent folder that will eventually hold all apprentice projects.
 
+---
+
+## Summary of What You Just Completed
+
+1. Correctly used the administrator account for environment construction.  
+1. Created the parent folder that will hold all apprentice projects.  
+1. Prepared the system for debugger configuration and validation.  
+1. Established the foundation required for the first full D‑language debugging cycle.
+
+---
+
+## What’s Next
+
+1. Create the first D project inside the parent folder.  
+1. Configure Visual Studio Code for debugging.  
+1. Run the full **edit → F5 → breakpoint** validation loop.
