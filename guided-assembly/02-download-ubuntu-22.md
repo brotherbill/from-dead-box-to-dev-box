@@ -1,103 +1,80 @@
-# Download PopOS!
-###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/download-ubuntu-22.md
-
-PopOS! is a strong choice for young engineers because it is simple, reliable, and designed to stay out of the way. It provides a clean environment where the computer behaves predictably, without distractions, advertisements, or unnecessary software. PopOS! is also well‑supported, secure, and works well on older computers, giving them a fresh start and extending their useful life.
-
-PopOS! is free and open source. This means families do not need to purchase a license, and the system can be inspected, improved, and trusted by the global engineering community. The young engineer is learning on a platform built openly and maintained by real developers.
-
-PopOS! does not include any AI assistants or AI‑driven features by default. This keeps the environment focused and quiet, allowing the young engineer to think independently and build confidence without automated suggestions or interruptions.
-
-This project uses PopOS! as the primary operating system for the course because it provides a focused, predictable environment that aligns well with the workflows taught here. Other operating systems, such as Windows or macOS, are designed for a wide range of home and office scenarios and include many additional features and integrations. PopOS! offers a streamlined environment that keeps the emphasis on core engineering skills and development tools.
-
-PopOS! is also used by many professional software developers in their daily work. It provides a stable, predictable environment that supports real programming tools and real engineering workflows. This means the young engineer is learning in the same type of environment that professionals use, which helps build confidence and long‑term skills.
-
-This document guides a parent or guardian through downloading the PopOS! operating system. These steps are performed on a separate support machine that already works and has access to the Internet.
-
-Follow each step in order.
-
----
+# Download Ubuntu 22.04 ISO
+### Purpose: Retrieve the Ubuntu 22.04 ISO needed for guided assembly
+###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/02-download-ubuntu-22.md
 
 ## 1. Open a web browser
 
-1. On the support machine, **open** any modern web browser (for example, Chrome, Edge, Firefox, or Safari).
+1. On the support machine, open any modern web browser.
 
 ---
 
-## 2. Go to the official PopOS! download page
+## 2. Go to the official Ubuntu download page
 
-1. In the browser’s address bar, **type**:  
-   https://system76.com/pop/
-1. **Press** Enter to load the official PopOS! website.
-1. **Click** the **Download** button on the page.
-
----
-
-## 3. Choose the correct PopOS! version
-
-1. **Select** the PopOS! version recommended for most computers (usually the latest LTS release).
-1. If the target machine has an NVIDIA graphics card, **select** the NVIDIA version.  
-   If you are unsure, **select** the standard version.
-
----
-
-## 4. Record the checksum
-
-1. On the download page, **locate** the checksum value (a long string of letters and numbers).
-1. **Copy** this checksum into Notepad.  
-   You will use it later to confirm the download is correct and not corrupted.
+1. In the browser’s address bar, type:  
+   https://releases.ubuntu.com/jammy/
+1. Press Enter.
+1. Click the link named:  
+   `ubuntu-22.04.5-desktop-amd64.iso`
+1. When the Save As dialog appears, set the folder path to:  
+   `C:\dev\quarantine\`
+1. Create the folder if it does not exist.
+1. Set the filename to:  
+   `ubuntu-22.04.5-desktop-amd64.iso`
+1. Click Save.
 
 ---
 
-## 5. Download the ISO file
+## 3. Record the checksum
 
-1. **Click** the **Download** button.
-   1. This brings up the Save As dialog.
-   1. In Windows, **set** the folder path to:  
-      C:\dev\quarantine\  
-      (Create these folders if they do not exist.)
-   1. **Save** the file using the default filename (for example: `pop-os_24.04_amd64_generic_23.iso`).
-
-1. The browser will begin downloading a file ending in `.iso`.  
-   This file is the complete PopOS! installer.
+1. In the browser’s address bar, type:  
+   https://releases.ubuntu.com/jammy/SHA256SUMS
+1. Press Enter.
+1. Locate the line containing:  
+   `ubuntu-22.04.5-desktop-amd64.iso`
+1. Copy the SHA256 value into a text file for later verification.
 
 ---
 
-## 6. Wait for the download to finish
+## 4. Download the ISO file
 
-1. **Allow** the ISO file to finish downloading completely.  
-   This may take several minutes depending on Internet speed.
-
----
-
-## 7. Verify the download (recommended)
-
-1. **Use** the checksum you recorded to verify the ISO file.
-1. **Follow** the instructions provided on the PopOS! website for verifying the checksum on your operating system (Windows, macOS, or Linux).
-   1. In Windows, **open** PowerShell.
-   1. **Run**:  
-      `certutil -hashfile pop-os_24.04_amd64_generic_23.iso SHA256`  
-      (Replace the filename with the one you downloaded.)
-   1. **Compare** the characters to the checksum saved in Notepad.
-   1. A matching checksum confirms the file is safe and complete.
+1. Click the link named:  
+   `ubuntu-22.04.5-desktop-amd64.iso`
+1. When the Save As dialog appears, set the folder path to:  
+   `C:\dev\quarantine\`
+1. Create the folder if it does not exist.
+1. Set the filename to:  
+   `ubuntu-22.04.5-desktop-amd64.iso`
+1. Click Save.
 
 ---
 
-When these steps are complete, the PopOS! installer file is ready to be written to a USB flash drive in the next stage of the process.
+## 5. Wait for the download to finish
+
+1. Allow the ISO file to finish downloading completely.
 
 ---
 
-## Summary of What You Just Completed
+## 6. Verify the download
 
-1. You opened a web browser on the support machine.
-1. You navigated to the official PopOS! download page.
-1. You selected the correct PopOS! version for the target machine.
-1. You recorded the checksum for verification.
-1. You downloaded the PopOS! ISO file.
-1. You verified the ISO file using the checksum.
+1. Open PowerShell on the support machine.
+1. Change the working directory to:  
+   `cd C:\dev\quarantine`
+1. Run:  
+   `certutil -hashfile ubuntu-22.04.5-desktop-amd64.iso SHA256`
+1. Copy the expected checksum and the calculated checksum into the following PowerShell block:
 
----
+   ```
+   $expected = @"
+PASTE_EXPECTED_CHECKSUM_HERE
+"@
 
-## What’s Next
+   $actual = @"
+PASTE_ACTUAL_CHECKSUM_HERE
+"@
 
-1. You will write the PopOS! ISO file to a USB flash drive.
-1. This USB flash drive will become the bootable installer for the target machine.
+   $expected -eq $actual
+   ```
+
+1. If PowerShell prints `True`, the checksums match.
+
+###### End of Document <02-download-ubuntu-22.md>

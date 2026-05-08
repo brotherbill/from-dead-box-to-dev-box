@@ -1,109 +1,270 @@
 # MY_RULES.md
+### Purpose: Defines the doctrinal ruleset governing all operator documentation in this repo
 ###### C:/dev/repos/from-dead-box-to-dev-box/MY_RULES.md
 
-# Documentation Rules
+# 1. Formatting Rules
 
-1. All Markdown files must be delivered inside a 4‑backtick copy block.
-1. Markdown files must contain no inline commentary.
-1. Every Markdown file and documentation file must include a file‑location header on line 2.
-1. The file‑location header must use a level‑6 Markdown heading (`######`).
-1. The file‑location header must contain the full repository‑relative path to the file.
-1. The file‑location header must use Linux‑style forward slashes (`/`), regardless of operating system.
-1. Each document must clearly identify its own location within the repository.
-1. All ordered list items must use `1.` for every item.
-1. All documentation must use a direct, deterministic, operator‑grade tone with no fluff.
-1. All documentation must be parent‑appropriate and professional.
-1. All documentation must avoid humor, sarcasm, or informal language.
-1. All documentation must avoid negative statements about any technology, platform, or vendor.
-1. References to other programming languages must be factual, neutral, and professional.
-1. No document may contain jokes, ridicule, or dismissive comparisons.
-1. All Markdown files must begin with a Header 1 title on line 1 and the file‑location header on line 2.
-1. If a Markdown file must be read or executed in a specific order, its filename must begin with a numeric prefix such as `01-filename.md`. The numeric prefix defines the required reading or execution sequence. Files that do not require a specific order must not use numeric prefixes.
-1. In all parent‑facing documentation, the operating system name must be written as **PopOS!** to match the visible brand. The technical spelling **Pop!_OS** may only be used in internal engineering notes or when referring to package names or commands.
-1. Every Markdown file must include a full Windows-style absolute path on line 2, beginning with `C:/`, pointing to the file’s exact location within the repository. This path must always reflect the file’s true location and must be updated whenever the file is moved or renamed.
-1. Every entry added to `notes/chat.md` must begin with a descriptive title on line 1 explaining the purpose of the file (e.g., “chat.md — Session Log and State Rehydration Anchor”). Line 2 must contain the full Windows-style absolute path to `notes/chat.md`, beginning with `C:/`. This ensures clarity, self-description, and deterministic rehydration of workflow state.
-1. All entries in `notes/chat.md` must use a standardized timestamp format: `YYYY‑MM‑DD HH:MM ZONE` using a 24‑hour clock and the operator’s local timezone. Seconds must not be included.
-1. Use **Sign in** and **Sign out** as the universal terms for authentication actions. Do not use “log in,” “log on,” “sign on,” or “log out” in documentation. This ensures consistency across all operating systems and avoids legacy or ambiguous terminology. Applies to all user‑facing instructions, screenshots, and workflow descriptions.
-
-1. Parents must use **different passwords** for the parent administrator account and the parent regular (daily‑use) account. Passwords must not be reused, patterned, or minimally altered (for example, adding a number or changing one character). This separation protects the administrator account from accidental changes and maintains system stability. Parents may use a password manager such as **Bitwarden** to store passwords securely. Bitwarden is free, open‑source, and helps prevent password mix‑ups or loss.
-
-**Example of required file‑location header:**
-
-###### from-dead-box-to-dev-box/00-overview/2-day-checklist.md
+1. Line 1 must be an H1 title.  
+1. Line 2 must be a purpose statement.  
+1. Line 3 must be the file-location header.  
+1. All ordered lists must use `1.` for every item.  
+1. All documentation must use operator-grade tone.  
+1. No humor, no conversational drift.  
+1. All examples must be deterministic and reproducible.  
+1. All files must end with the line:  
+   ```
+   ###### End of Document <filename>
+   ```  
+1. `<filename>` must match the literal filename exactly.  
+1. `<filename>` may contain spaces.  
+1. `<filename>` must not contain `<` or `>`.  
+1. The brackets `<` and `>` are required and intentional.  
 
 ---
 
-# Workflow Rules
+# 2. Who Is the Operator
 
-1. All work proceeds in atomic steps.
-1. Copilot must not assume the next step; the user declares the next step explicitly.
-1. Copilot must not provide unsolicited suggestions.
-1. Copilot must not introduce branching paths.
-1. Copilot must not introduce options unless explicitly requested.
-1. Copilot must maintain chronological integrity in all workflow instructions.
-1. Copilot must maintain reproducible documentation for every step.
-1. Copilot must maintain strict separation between recording workflows (stateless) and editing workflows (stateful).
-1. Copilot must maintain operator‑grade clarity at all times.
-1. Copilot must avoid conversational tone during technical execution.
+In all TLB procedural files, the word **Operator** means **you**, the person doing your own installation.
 
----
+You might be:
+- a parent  
+- a Rice Farmer  
+- a student  
+- someone who cannot afford both a TLB box and a local repair shop  
+- someone doing this on your own because you need to  
 
-# VS Code Rules
+You are the Operator.
 
-1. VS Code must be locked down to prevent unsolicited suggestions.
-1. Autocomplete must be disabled.
-1. Automatic formatting on save must be disabled.
-1. Formatting must only occur when explicitly triggered by the operator.
-1. All execution of D programs must occur inside VS Code using **F5** or **Run → Start Debugging**.
-1. Terminal‑based execution of D programs is not permitted for young engineers.
+You do not need technical experience.  
+You do not need training.  
+You only perform steps that begin with `ACTION:`.  
+Everything else is a recipe you simply read and move on.
+
+The Operator is always the person at the keyboard, doing their own install.
 
 ---
 
-# Terminal Usage Doctrine
+# 3. Deterministic Behavior Rules
 
-1. The Terminal is a standard, approved tool for all young‑engineer workflows.
-1. GUI instructions remain primary when appropriate, but every workflow may include a Terminal path.
-1. Terminal commands must be explicit, copy‑safe, minimal, and deterministic.
-1. No Terminal command may be implied; all commands must be shown in full.
-1. Terminal fallbacks are permitted and encouraged when GUI tools stall or obscure system state.
-1. Terminal usage must never be framed as “advanced” or “optional”; it is a normal part of the course.
-1. All Terminal instructions must avoid jargon unless defined in the same step.
-
----
-
-# Language Reference Rules
-
-1. Other programming languages may be referenced when relevant.
-1. All references must remain neutral, factual, and professional.
-1. No jokes, sarcasm, or humor at the expense of any language or community.
-1. No negative comparisons, insults, or dismissive commentary.
-1. Comparisons must be based only on verifiable facts such as:
-   - compilation model  
-   - memory management approach  
-   - type system characteristics  
-   - tooling differences  
-   - runtime behavior  
-1. No statements implying superiority or inferiority.
-1. The focus must remain on clarity and engineering understanding.
-
-**Allowed Examples:**
-
-- “Python uses dynamic typing, while D uses static typing.”
-- “C requires manual memory management; D offers both manual and automatic approaches.”
-- “Rust enforces ownership rules at compile time; D uses a different model.”
-
-**Disallowed Examples:**
-
-- “Language X is bad.”
-- “Language Y is outdated.”
-- “Nobody should use Z anymore.”
+1. Identical inputs must produce identical outputs.  
+1. No hidden state may influence behavior.  
+1. All steps in all workflows must be explicit.  
+1. No implied steps are permitted.  
+1. Documentation must remain stable and reproducible.  
+1. Regenerations must not introduce drift.  
 
 ---
 
-# Copilot Interaction Rules
+# 4. Pattern + Example Doctrine
 
-1. Copilot must follow all rules in this document without exception.
-1. Copilot must not provide unsolicited help.
-1. Copilot must not provide alternative paths unless explicitly requested.
-1. Copilot must not introduce ambiguity.
-1. Copilot must not introduce humor, personality, or conversational tone during technical execution.
+1. All abstract patterns must use the `<pattern>` syntax.  
+1. Pattern and example must never be mixed.  
+1. All examples must be minimal, deterministic, and reproducible.  
+
+---
+
+# 5. “Do this, then do that” Doctrine
+
+1. All procedural MDs must follow the Minimum Tab structure:  
+   - Do this.  
+   - Then do that.  
+1. No filler, no commentary, no teaching tone.  
+1. This repo is an operator manual, not a learning tool.
+
+---
+
+# 6. No Personality Doctrine
+
+1. No jokes, slang, metaphors, or conversational filler.  
+1. All writing must be dry, literal, and procedural.  
+1. No explorer-facing tone is permitted.
+
+---
+
+# 7. Action Marking Doctrine
+
+1. All steps are informational by default.  
+1. A step requires operator execution only when explicitly marked with the prefix:  
+   ```
+   ACTION:
+   ```  
+1. Informational steps must not imply action and must not change system state.  
+1. The `ACTION:` prefix must appear at the start of the line and must be written exactly as shown.  
+1. Each `ACTION:` line must contain exactly one operator action.  
+1. Multiple actions require multiple `ACTION:` lines.  
+1. If a line does not begin with `ACTION:`, the operator simply reads it and moves on.  
+1. This doctrine is load‑bearing and applies to all operator documentation in this repo.
+
+---
+
+# 8. Real-Person Identity Rule
+
+1. Steps must be written as if a real operator is performing them on a real machine.  
+1. No fictional identities may be introduced.  
+1. No parent or explorer identity patterns may appear in this repo.  
+1. Brother Bill must appear only as the author of doctrine, never as an example identity.
+
+---
+
+# 9. Commit Discipline Doctrine
+
+1. Every commit must be atomic, intentional, documented, and reversible.  
+1. No multi-purpose commits.  
+1. No “misc fixes.”  
+1. No bundling unrelated changes.
+
+---
+
+# 10. Folder Layout Rules
+
+1. The repo must maintain a stable, predictable structure:  
+   ```
+   /from-dead-box-to-dev-box
+       /01-boot-and-account
+       /02-system-update
+       /03-install-tools
+       /04-configure-editor
+       /05-verify-compiler
+       /06-lockdown
+       /notes
+           chat.md
+       MY_RULES.md
+   ```  
+1. Each numbered folder contains one deterministic procedure.  
+1. No renumbering without full-discipline regeneration.
+
+---
+
+# 11. Naming Rules
+
+1. All folders must use two-digit numeric prefixes.  
+1. All MDs must use lowercase with hyphens.  
+1. All file names must be stable and printable.  
+1. No spaces in file names.  
+
+---
+
+# 12. notes/chat.md Doctrine
+
+1. All operator reasoning, discoveries, corrections, and deviations must be logged in `/notes/chat.md`.  
+1. The file is the operator’s scratchpad and audit trail.  
+1. It must contain:  
+   - what was attempted  
+   - what worked  
+   - what failed  
+   - what was corrected  
+   - what was learned  
+1. It must not contain explorer content, pedagogy, missions, or museum material.
+
+---
+
+# 13. Scope Protection Doctrine
+
+1. This repo must contain only operator steps, operator rules, and operator notes.  
+1. The following must never appear in this repo:  
+   - missions  
+   - mastery steps  
+   - explorer-facing text  
+   - museum rooms  
+   - tips & tricks  
+   - compiler recovery  
+   - translation guild  
+   - pricing fairness  
+   - glossary  
+   - Unicode identifiers  
+   - pedagogy  
+   - RCA  
+   - ubiquitous terms  
+   - Walkabout Mode  
+   - HAM  
+1. These belong to other repos.
+
+---
+
+# 14. Printability Doctrine
+
+1. All MDs must be printable without modification.  
+1. No wide tables or complex formatting.  
+1. No interactive elements.  
+1. No dependencies on color or UI.  
+1. Printed MDs must remain fully usable.
+
+---
+
+# 15. Operator-Only Tone
+
+1. This repo is written for operators, not explorers.  
+1. Tone must be dry, literal, procedural, minimal, and consistent.  
+1. This repo is the foundation for all future machines.
+
+# 16. Four‑Backtick Emission Doctrine
+
+1. All regenerated files must be delivered in a single fenced code block using four backticks.
+1. The block must contain the entire regenerated content with no text before or after it.
+1. The block must not be split, wrapped, or surrounded by commentary.
+1. The block must be uninterrupted and copy‑safe for operators.
+1. Nested code blocks inside the regenerated file must use three backticks.
+1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
+
+# 17. Header and Footer Boundary Doctrine
+
+1. All regenerated procedural files must include their header lines in Section 0.
+1. The header consists of:
+   - the H1 filename line  
+   - the purpose statement  
+   - the file‑location header  
+1. These lines are structural and must be regenerated exactly according to formatting rules.
+1. All regenerated procedural files must include the footer line in the final section.
+1. The footer line must follow this exact pattern:  
+   ```
+   ###### End of Document <filename>
+   ```
+1. The `<filename>` value must match the literal filename of the document.
+1. The header and footer are structural boundaries and must appear only once per file.
+1. These boundaries are load‑bearing and apply to all regenerated artifacts in this repo.
+
+# 18. Section Boundary Doctrine
+
+1. All procedural MDs must separate major sections using a horizontal rule.
+1. The horizontal rule must consist of exactly three hyphens:
+   ```
+   ---
+   ```
+1. A single blank line must appear before the horizontal rule.
+1. A single blank line must appear after the horizontal rule.
+1. Section headers must not appear directly adjacent to other content without the required blank lines.
+1. The boundary pattern is:
+   <end of section content>
+   <one blank line>
+   ---
+   <one blank line>
+   <next section header>
+1. This boundary pattern is mandatory for all regenerated procedural files.
+1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
+
+# 19. Informational‑Now, Action‑Later Doctrine
+
+1. Informational lines are recipes. They explain what recipe steps you will take later.
+1. `ACTION:` lines are commands. They are steps you perform right now.
+1. If a line does not begin with `ACTION:`, the operator simply reads it and moves on.
+1. Informational lines may be re‑expressed later as `ACTION:` lines for when you need to actually apply or do the step.
+1. Informational lines must not begin with imperative verbs.
+1. `ACTION:` lines must begin with the exact prefix `ACTION:` and must contain exactly one operator action.
+1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
+
+### Operator Analogy (Pilot Landing Pattern)
+
+- Before landing, the pilot says:  
+  *“When we enter the landing pattern, the flaps will need to be set to 40 degrees.”*  
+  → This is informational. You simply hear it and move on.
+
+- During landing, the pilot says:  
+  **“Flaps to 40.”**  
+  → This is an action. It must be done immediately.
+
+This is the same distinction used in all procedural files:  
+Only `ACTION:` lines are performed now.  
+All other lines are recipes for what you will do later.
+
+
+###### End of Document <MY_RULES.md>

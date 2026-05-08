@@ -1,32 +1,32 @@
 # 2‑Day Checklist: From Dead Box to Dev Box
 ###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/01-2-day-checklist.md
 
-This checklist describes the sequence of actions required to perform a complete “brain transplant” on a computer—typically up to ten years old and still physically functional—turning it into a working D development machine. After this process, the system will no longer retain its previous operating system or configuration; it will start fresh with PopOS!, regardless of whether it previously ran Windows or macOS or was unable to boot.  
+This checklist describes the sequence of actions required to perform a complete “brain transplant” on a computer, typically up to ten years old and still physically functional, turning it into a working D development machine. After this process, the system will no longer retain its previous operating system or configuration; it will start fresh with Ubuntu, regardless of whether it previously ran Windows or macOS or was unable to boot.  
 Each item must be completed in order.
 
 ---
 
-## Day 1 – Prepare Install Media and Install PopOS!
+## Day 1 – Prepare Install Media and Install Ubuntu
 
 ### 1. Confirm target machine and support machine
 
 1. Identify the target machine.
 1. Confirm that all important data on the target machine is backed up or no longer needed.
 1. Confirm access to a support machine with a web browser, USB port, and Internet access.
-1. Confirm availability of a USB flash drive of sufficient size for the PopOS! image.
+1. Confirm availability of a USB flash drive of sufficient size for the Ubuntu image.
 
-### 2. Download PopOS! image
+### 2. Download Ubuntu image
 
 1. Open the support machine’s browser.
-1. Navigate to the official PopOS! download page.
-1. Download the appropriate PopOS! ISO image.
+1. Navigate to the official Ubuntu download page.
+1. Download the appropriate Ubuntu ISO image.
 1. Record the expected checksum value.
 1. Verify the downloaded ISO file against the published checksum.
 
 ### 3. Create bootable USB (support machine)
 
 1. Install or open the chosen USB imaging tool.
-1. Select the downloaded PopOS! ISO file.
+1. Select the downloaded Ubuntu ISO file.
 1. Select the USB flash drive as the target.
 1. Start the imaging process and wait for completion.
 1. Safely eject the USB flash drive.
@@ -39,20 +39,20 @@ Each item must be completed in order.
 1. Save changes and exit.
 1. Confirm that the machine attempts to boot from the USB device.
 
-### 5. Install PopOS! on the target machine
+### 5. Install Ubuntu on the target machine
 
 1. Boot the target machine from the USB device.
-1. Start the PopOS! installer.
+1. Start the Ubuntu installer.
 1. Choose the clean‑install option.
 1. Confirm that all existing data will be erased.
 1. Start the installation and wait for completion.
-1. Reboot into the newly installed PopOS! system.
+1. Reboot into the newly installed Ubuntu system.
 
 ---
 
 ## Day 2 – Configure Users and Development Environment
 
-### 6. Complete initial PopOS! setup
+### 6. Complete initial Ubuntu setup
 
 1. Complete the initial configuration wizard.
 1. Create the parent administrator account.
@@ -82,7 +82,7 @@ Each item must be completed in order.
 
 ### 9. Install Visual Studio Code
 
-1. Download the appropriate VS Code package for PopOS!.
+1. Download the appropriate VS Code package for Ubuntu.
 1. Install VS Code using the recommended method.
 1. Sign in as the child standard account and launch VS Code to confirm it starts correctly.
 
@@ -104,7 +104,7 @@ Each item must be completed in order.
 
 1. Sign in as the child standard account.
 1. Create a new folder for D projects.
-1. Create a simple `hello.d` program in VS Code.
+1. Create a simple hello-world `main.d` program in VS Code.
 1. Compile the program using the D compiler.
 1. Run the program inside VS Code using F5 or Run → Start Debugging.
 

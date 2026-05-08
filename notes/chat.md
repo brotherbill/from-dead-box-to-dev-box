@@ -211,5 +211,30 @@
 - Continue pipeline validation with hello-avalonia.
 - Begin Silly-Strings reference lineage.
 
+## 2026‑05‑08 — Section 0 refinements for 04-install-ubuntu.md
+
+### What changed
+1. Refined Section 0 of `04-install-ubuntu.md` to align with the Informational‑Now / Action‑Later Doctrine.
+1. Removed imperative‑shaped language from the Windows subsection.
+1. Converted Windows bullets into capability‑descriptions.
+1. Added bold emphasis to the first instance of **later** to prevent accidental execution.
+1. Identified and removed the personality‑violating sentence in Section 3 (“With a calm guide, even a rice farmer can do it.”).
+1. Confirmed that “Operator” remains the correct identity term per MY_RULES.md.
+1. Verified that the rest of the document remains operator‑grade, deterministic, and UB‑safe.
+
+### Files touched
+- `guided-assembly/04-install-ubuntu.md`
+
+### Result
+Section 0 is now fully compliant with:
+- Informational‑Now / Action‑Later Doctrine  
+- No Personality Doctrine  
+- Operator‑Only Tone  
+- Deterministic Behavior Rules  
+- Printability Doctrine  
+
+No ACTION lines were added or modified.  
+No structural boundaries were changed.
+
 ###### End of Section
 

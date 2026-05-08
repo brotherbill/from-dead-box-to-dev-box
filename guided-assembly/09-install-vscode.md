@@ -1,139 +1,208 @@
 # 09 — Install Visual Studio Code
+### Purpose: Install Visual Studio Code and prepare it for later D‑language configuration
 ###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/09-install-vscode.md
+
+# Two‑Account Doctrine (Read Before Continuing)
+
+The Learning Box uses two Ubuntu accounts with strict, non‑overlapping responsibilities:
+
+1. **The parent administrator account installs Visual Studio Code.**  
+2. **The explorer account configures Visual Studio Code.**
+
+These roles must not be mixed.
+
+## Why this must be understood before continuing
+
+In most software setups, the administrator installs the application *and* configures it.  
+Following that instinct here will lead to:
+
+- non‑working systems  
+- extension bleed‑through  
+- identity drift  
+- cloud contamination  
+- unpredictable editor behavior  
+- support failures  
+- time‑consuming rabbit holes  
+
+This is a structural rule of The Learning Box.  
+It is not optional and not flexible.
+
+This is the same class of rule as the SAVE‑instinct override in caTools:  
+**a natural behavior that must be consciously prevented because it produces failure.**
+
+## Required behavior
+
+1. All installation steps in this file must be performed by the **parent administrator account**.  
+2. All configuration steps after installation must be performed by the **explorer account**.  
+3. Do not perform configuration tasks as the parent administrator.  
+4. Do not perform installation tasks as the explorer.
+
+This boundary is load‑bearing.  
+Breaking it will produce a system that cannot be repaired without starting over.
+
+---
+
+# Identity Invariant — Confirm the Correct Ubuntu User
+
+1. Open Terminal.  
+1. Run:  
+   ```
+   whoami
+   ```  
+1. The output must be the parent administrator account.  
+1. If the output is not the parent administrator account, stop.  
+1. Log out and switch to the parent administrator account.
+
+---
 
 # Install Visual Studio Code
 
-This step installs Visual Studio Code and prepares it for later D‑language configuration. No D‑specific tools or extensions are installed in this step. This maintains separation of concerns and ensures a clean, stable editor environment.
+1. Log in using the parent administrator account.  
+1. Open the web browser.  
+1. Navigate to:  
+   https://code.visualstudio.com/  
+1. Select **Download for .deb**.  
+1. Wait for the download to complete.  
+1. Open the downloaded `.deb` file.  
+1. Select **Install**.  
+1. Enter the parent administrator password when prompted.  
+1. Wait for installation to complete. The window will return to its initial state without a confirmation message.
 
 ---
 
-## Background: Why PopOS! Uses Debian
+# Launch Visual Studio Code
 
-PopOS! is built on **Debian**, one of the oldest and most stable Linux families. Debian provides:
-
-1. A predictable package system.
-1. Long‑term stability.
-1. A large, well‑maintained software repository.
-1. A consistent foundation used by many education‑focused Linux distributions.
-
-PopOS! inherits these characteristics, which makes it a reliable base for young‑engineer workflows.
+1. Press the **Super** key.  
+1. Type:  
+   ```
+   Visual Studio Code
+   ```  
+1. Press **Enter**.
 
 ---
 
-## Install Visual Studio Code
+# Close Unnecessary Tabs
 
-1. Ensure you are using the **parent administrator account**, which is required for software installation.
-1. Open the **web browser**.
-1. Navigate to the official Visual Studio Code download page:  
-   https://code.visualstudio.com/
-1. Click **Download for Linux (.deb)**.
-1. When the `.deb` package finishes downloading, open it. You may open it by **right‑click → Open** or by **double‑clicking** the file.
-1. A window will appear showing **“code”** and the tagline **“Code editing. Redefined.”** with a large **Install** button. Click **Install**.
-1. When the system prompts for authentication, enter the parent administrator password.
-1. A progress bar and percentage will appear.  
-   **When they complete, the window will return to its original layout without a confirmation message.**
-1. This silent return indicates that installation is complete.
-
----
-
-## Launch Visual Studio Code
-
-1. Press the **Super** key.
-1. Type **Visual Studio Code**.
-1. Press **Enter** to launch it.
-
----
-
-## Close Unnecessary Tabs
-
-1. Close any tabs that Visual Studio Code opens automatically, including the **Welcome** tab or any informational tabs.
+1. Close all tabs opened automatically by Visual Studio Code.  
 1. Only the main editor window should remain open.
 
 ---
 
-## Install Required Non‑D Extensions
+# Extension‑First Doctrine
 
-These extensions support core engineering workflows without introducing language‑specific behavior. No D‑language extensions are installed at this stage.
-
-1. Open the **Extensions** panel using the sidebar button or **Ctrl+Shift+X**.
-1. Wait a few seconds for the panel to stabilize.
-1. Install the following extensions:
-   - **GitHub Pull Requests** (GitHub)  
-     Always click the **Install** button in the large right‑hand pane.
-   - **GitHub Repositories** (GitHub)
-   - **GitLens — Git supercharged** (GitKraken)
-   - **Markdown All in One** (Yu Zhang)
-   - **YAML** (Red Hat)
-   - **EditorConfig** (EditorConfig)
-1. Wait for each extension to finish installing before continuing.
-1. Do not switch any extension to the **Pre‑release** version.
-1. If prompted to trust a publisher, click **Trust Publisher & Install**.
+1. Install required extensions before modifying any settings.  
+1. Do not open any files before installing extensions.  
+1. Do not modify any settings before installing extensions.  
+1. Do not sign in.  
+1. Do not enable Settings Sync.
 
 ---
 
-## Configure VS Code Behavior
+# Install Required Non‑D Extensions
 
-1. Open **Settings** using the gear icon in the bottom‑left corner.
-1. Make the Settings window **full screen**.
-1. Use the **Search settings** bar for each configuration step.
+1. Open the **Extensions** panel (**Ctrl+Shift+X**).  
+1. Wait for the panel to stabilize.  
+1. Install the following extensions in this exact order:
 
-### Disable autocomplete‑related features
+   1. **GitHub Pull Requests** (GitHub)  
+   1. **GitHub Repositories** (GitHub)  
+   1. **GitLens — Git supercharged** (GitKraken)  
+   1. **Markdown All in One** (Yu Zhang)  
+   1. **YAML** (Red Hat)  
+   1. **EditorConfig** (EditorConfig)
 
-**A — Disable Quick Suggestions (Terminal autocomplete source)**  
-1. Search for: **suggest quick**  
-1. Locate **Terminal › Integrated › Suggest: Quick Suggestions**.  
-1. Turn **Commands**, **Arguments**, and **Unknown** **off**.
-
-**B — Disable Suggest On Trigger Characters**  
-1. Clear the search bar.  
-1. Search for: **trigger**  
-1. Find **Editor: Suggest On Trigger Characters**.  
-1. Turn this **off**.
-
-**C — Disable Parameter Hints**  
-1. Clear the search bar.  
-1. Search for: **parameter hints**  
-1. Find **Editor › Parameter Hints: Enabled**.  
-1. Turn this **off**.
-
-### Disable automatic formatting on save
-
-1. Clear the search bar.  
-1. Search for: **format on save**  
-1. Find **Editor: Format On Save**.  
-1. Ensure it is **unchecked**.
-
-### Disable automatic extension recommendations
-
-1. Clear the search bar.  
-1. Search for: **recommendations**  
-1. Find **Extensions: Ignore Recommendations**.  
-1. Leave this **unchecked**.  
-1. Find **Extensions: Show Recommendations Only On Demand**.  
-1. Turn this **on**.
+1. Wait for each extension to finish installing.  
+1. Do not install any pre‑release versions.  
+1. If prompted, select **Trust Publisher & Install**.
 
 ---
 
-## Verify Installation
+# Identity Lock — No Sign‑In Allowed
 
-1. Close Visual Studio Code.
-1. Reopen Visual Studio Code.
-1. Confirm that:
-   - The application launches without errors.
-   - The Extensions panel shows the installed non‑D extensions.
-   - No D‑language extensions are present.
-
----
-
-## Summary of What You Just Completed
-
-1. Installed Visual Studio Code.
-1. Launched Visual Studio Code and confirmed correct operation.
-1. Installed required non‑D extensions.
-1. Configured Visual Studio Code to prevent unsolicited behavior.
+1. Check the bottom‑left corner of Visual Studio Code.  
+1. It must show:  
+   ```
+   Not Signed In
+   ```  
+1. If any sign‑in prompt or avatar appears, stop.  
+1. Do not sign in.  
+1. Do not enable Settings Sync.
 
 ---
 
-## What’s Next
+# Configure Visual Studio Code Behavior
 
-1. Install the DMD compiler from dlang.org.
+1. Open **Settings** using the gear icon.  
+1. Make the Settings window full screen.  
+1. Use the search bar for each configuration step.
+
+## Disable Quick Suggestions (Terminal)
+
+1. Search:  
+   ```
+   suggest quick
+   ```  
+1. Turn **Commands**, **Arguments**, and **Unknown** off.
+
+## Disable Suggest On Trigger Characters
+
+1. Search:  
+   ```
+   trigger
+   ```  
+1. Turn **Editor: Suggest On Trigger Characters** off.
+
+## Disable Parameter Hints
+
+1. Search:  
+   ```
+   parameter hints
+   ```  
+1. Turn **Editor › Parameter Hints: Enabled** off.
+
+## Disable Format On Save
+
+1. Search:  
+   ```
+   format on save
+   ```  
+1. Ensure **Editor: Format On Save** is unchecked.
+
+## Configure Extension Recommendations
+
+1. Search:  
+   ```
+   recommendations
+   ```  
+1. Leave **Extensions: Ignore Recommendations** unchecked.  
+1. Turn **Extensions: Show Recommendations Only On Demand** on.
+
+---
+
+# Verify Installation
+
+1. Close Visual Studio Code.  
+1. Reopen Visual Studio Code.  
+1. Confirm:  
+   - The application launches without errors.  
+   - All required non‑D extensions are installed.  
+   - No D‑language extensions are present.  
+   - The bottom‑left corner shows **Not Signed In**.
+
+---
+
+# Summary
+
+1. Applied the Two‑Account Doctrine.  
+1. Confirmed the correct Ubuntu user.  
+1. Installed Visual Studio Code.  
+1. Installed required non‑D extensions in deterministic order.  
+1. Locked Visual Studio Code into local‑only mode.  
+1. Disabled unsolicited editor behavior.
+
+---
+
+# Next Step  
+Proceed to compiler installation.
+
+###### End of Document <09-install-vscode.md>
