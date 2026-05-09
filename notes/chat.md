@@ -1,5 +1,5 @@
 # Chat Log for Workflow Execution
-###### C:/dev/repos/from-dead-box-to-dev-box/chat.md
+###### C:/dev/repos/from-dead-box-to-dev-box/notes/chat.md
 
 ### 2026‑04‑23 08:00 EDT — Completion of 2‑day‑checklist.md
 1. Finalized 2‑day‑checklist.md with full doctrine alignment.
@@ -236,5 +236,13 @@ Section 0 is now fully compliant with:
 No ACTION lines were added or modified.  
 No structural boundaries were changed.
 
-###### End of Section
+### 2026‑05‑08 22:23 EDT — Section 0 cleanup
 
+- Removed the entire Outcome block from Section 0.
+- Replaced it with a non‑imperative informational line stating that the boot menu key is written down so it remains available.
+- Eliminated all foreshadowing language (“later”, “timing‑sensitive”, “when needed”).
+- Ensured Section 0 is purely informational with no ACTION quacking.
+- Verified that the examples remain at three for cognitive load stability.
+- Preserved all other content unchanged.
+
+###### End of Document <chat.md>

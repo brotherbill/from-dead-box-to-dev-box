@@ -1,61 +1,41 @@
-# 04-install-ubuntu.md
-### Purpose: Install Ubuntu on the computer using deterministic operator steps
-###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/04-install-ubuntu.md
 
-## 0. Determine the Boot‑Menu Key (Required Before Anything Else)
+# Determine the Boot Menu Key
+### Purpose
+###### 00-determine-boot-menu-key.md
 
-The operator must know the exact boot‑menu key for this machine before any other action.  
-This key is required for a timing‑sensitive unit of work later in the procedure.
+Determine which F key will be used later.  
+This key will be used during a short step later in the procedure.
 
-### What Copilot Is
-Copilot is a question‑answering tool accessible from any working device.  
-This section describes how to access Copilot.  
-These lines are informational‑now and become actions only when re‑expressed later with `ACTION:`.
+### How Copilot Will Be Accessed
 
-### How to Open Copilot on a Windows Computer
-To access Copilot on a Windows machine, the operator will **later** perform the following actions:
-
-- The Windows key is used to open the system search interface.
-- The text `Copilot` is entered into the search field.
-- The search results include an entry named **Copilot**.
-- That entry is selected later, when this becomes an ACTION.
-
-### How to Open Copilot on a Mac, Linux Computer, or Phone
-To access Copilot on a non‑Windows device, the operator will later perform the following actions:
-- The operator will open a web browser.  
-- The operator will navigate to `https://copilot.microsoft.com`.
-
-These lines are informational‑now and do not require operator execution.
+Copilot will be accessed later in a web browser at the address:  
+`https://copilot.microsoft.com`
 
 ---
 
-### Case A — The Machine Boots (Alive State)
+### Case A — The Machine Starts Normally
 
-If the machine powers on normally, the operator will later:
-- Open Copilot on the target machine.  
-- Ask: `What is the boot‑menu key for my computer model?`
-
-These lines describe the required question.  
-They do not require operator execution in this section.
+If the machine wakes up into its usual operating system and can be signed into, the operator will later perform two actions:
+- Copilot will be accessed in a web browser on the target machine at `https://copilot.microsoft.com`.
+- The question will be entered: “What is the boot menu key for my computer model?”
 
 ---
 
-### Case B — The Machine Does Not Boot (Dead State)
+### Case B — The Machine Does Not Wake Up Normally
 
-If the machine does not boot, the operator will later:
-- Obtain a working computer or phone.  
-- Locate the brand and model number printed on the target machine.  
-- Open Copilot on the working device.  
-- Ask: `What is the boot‑menu key for a <brand> <model>?`
+If the machine does not show its usual sign in screen, the operator will later perform three actions:
+- A separate working computer or phone will be used.
+- The brand and model number printed on the target machine will be located.
+- Copilot will be accessed in a web browser at `https://copilot.microsoft.com`, and the question will be entered:
+  “What is the boot menu key for Brand (<brand>) and Model (<model>)?”
 
-These lines describe the required question.  
-They do not require operator execution in this section.
+  Example 1: “What is the boot menu key for Brand (Dell) and Model (Latitude 5520 laptop)?”  
+  Example 2: “What is the boot menu key for Brand (HP) and Model (ProBook 450 G8 laptop)?”  
+  Example 3: “What is the boot menu key for Brand (Lenovo) and Model (ThinkPad T480 laptop)?”
 
 ---
 
-### Outcome
-The operator now knows the exact boot‑menu key.  
-No further steps may be performed until this key is known.
+The boot menu key is written down on scratch paper or in a notebook so it remains available. Short term memory is unreliable.
 
 ---
 
