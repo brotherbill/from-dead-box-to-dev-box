@@ -245,4 +245,12 @@ No structural boundaries were changed.
 - Verified that the examples remain at three for cognitive load stability.
 - Preserved all other content unchanged.
 
+## 2026-05-10 06:55 AM EDT — INSERT COMMENT BEFORE LINE 117 IN 04-INSTALL-UBUNTU.MD
+
+- Added an uppercase comment marker immediately before line 117 in `docs/04-install-ubuntu.md`.
+- Marker text: `<!-- RESUME WORK HERE LATER — INSERTED BY BROTHER BILL -->`
+- No other edits performed.
+- Document integrity preserved.
+- Resume point established for next editing session.
+
 ###### End of Document <chat.md>
