@@ -1,7 +1,5 @@
-# 03_UBUNTU_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/03_UBUNTU_BASICS_FOR_APPRENTICE.md
-
-# Ubuntu Basics for the Apprentice Engineer
+# Ubuntu Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/03_UBUNTU_BASICS_FOR_APPRENTICE.md>
 
 This document teaches the apprentice how to operate the Ubuntu desktop environment.  
 These skills are required before using the Terminal, VS Code, or the compiler.
@@ -20,7 +18,7 @@ Ubuntu has:
 
 Operator rule:
 
-- The apprentice does not rearrange the desktop.
+- The apprentice does not rearrange the desktop.  
 - The default layout is correct.
 
 ---

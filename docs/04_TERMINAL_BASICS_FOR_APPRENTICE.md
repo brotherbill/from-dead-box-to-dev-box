@@ -1,7 +1,5 @@
-# 04_TERMINAL_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/04_TERMINAL_BASICS_FOR_APPRENTICE.md
-
-# Terminal Basics for the Apprentice Engineer
+# Terminal Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/04_TERMINAL_BASICS_FOR_APPRENTICE.md>
 
 This document teaches the apprentice how to operate the Ubuntu Terminal.  
 These skills are required before learning core commands, VS Code, or the compiler.
@@ -28,7 +26,7 @@ Press **ENTER**.
 
 Operator rule:
 
-- The Terminal is the apprentice’s primary tool.
+- The Terminal is the apprentice’s primary tool.  
 - It must always be opened this way.
 
 ---

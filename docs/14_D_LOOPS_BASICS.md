@@ -1,7 +1,5 @@
-# 14_D_LOOPS_BASICS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/14_D_LOOPS_BASICS.md
-
-# D Loops Basics for the Apprentice Engineer
+# D Loops Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/14_D_LOOPS_BASICS.md>
 
 This document teaches the apprentice how to use `while`, `for`, and `foreach` loops.  
 These skills are required before learning arrays, collections, and algorithmic thinking.
@@ -232,7 +230,7 @@ Expected output:
 
 Operator rule:
 
-- `break` stops the loop.
+- `break` stops the loop.  
 - `continue` skips the current iteration.
 
 ---

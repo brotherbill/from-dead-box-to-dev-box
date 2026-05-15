@@ -1,7 +1,5 @@
-# 17_D_ARRAYS_AND_STATIC_LISTS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/17_D_ARRAYS_AND_STATIC_LISTS.md
-
-# D Arrays and Static Lists for the Apprentice Engineer
+# D Arrays and Static Lists for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/17_D_ARRAYS_AND_STATIC_LISTS.md>
 
 This document teaches the apprentice how to create arrays, index values, iterate over lists, and perform deterministic operations on collections.  
 These skills are required before learning searching, filtering, mapping, and algorithmic data processing.

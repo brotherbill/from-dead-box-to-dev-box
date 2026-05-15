@@ -1,7 +1,5 @@
-# 02_SILLY_STRINGS_MANUAL.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/02_SILLY_STRINGS_MANUAL.md
-
-# Silly Strings Manual (Apprentice Level)
+# Silly Strings Manual (Apprentice Level)  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/02_SILLY_STRINGS_MANUAL.md>
 
 This is the second program every apprentice engineer writes.  
 It teaches string literals, variables, concatenation, and the edit → save → compile → run cycle.

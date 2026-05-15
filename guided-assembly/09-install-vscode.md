@@ -105,7 +105,7 @@ Breaking it will produce a system that cannot be repaired without starting over.
 1. Install the following extensions in this exact order:
 
    1. **GitHub Pull Requests** (GitHub)  
-   1. **GitHub Repositories** (GitHub)  
+   1. **GitHub Repositories** (GitHub)  ==> Don't install <==
    1. **GitLens — Git supercharged** (GitKraken)  
    1. **Markdown All in One** (Yu Zhang)  
    1. **YAML** (Red Hat)  

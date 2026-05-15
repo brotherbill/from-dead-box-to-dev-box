@@ -1,7 +1,5 @@
-# 06_VS_CODE_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/06_VS_CODE_BASICS_FOR_APPRENTICE.md
-
-# VS Code Basics for the Apprentice Engineer
+# VS Code Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/06_VS_CODE_BASICS_FOR_APPRENTICE.md>
 
 This document teaches the apprentice how to operate Visual Studio Code (VS Code).  
 These skills are required before writing multi‑file D programs.
@@ -94,7 +92,7 @@ Ctrl + S
 
 Operator rule:
 
-- The apprentice saves constantly.
+- The apprentice saves constantly.  
 - No unsaved buffers before compiling.
 
 ---

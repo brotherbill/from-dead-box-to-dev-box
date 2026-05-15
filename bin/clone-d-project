@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-###### C:/dev/repos/from-dead-box-to-dev-box/bin/clone-d-project
+###### <clone-d-project>
 
 set -euo pipefail
 
@@ -27,17 +27,29 @@ TARGET="$TARGET_PARENT/$TARGET_NAME"
 
 [ -e "$TARGET" ] && fail "Target already exists: $TARGET"
 
+# Copy project
 cp -R "$SOURCE" "$TARGET"
 
-if [ -f "$TARGET/rca.json" ]; then
-    sed -i "s|\"project_path\": \".*\"|\"project_path\": \"$TARGET\"|" "$TARGET/rca.json"
-    sed -i "s|\"project_name\": \".*\"|\"project_name\": \"$TARGET_NAME\"|" "$TARGET/rca.json"
+# Rewrite dub.json name
+if [ -f "$TARGET/dub.json" ]; then
+    sed -i "s|\"name\": \".*\"|\"name\": \"$TARGET_NAME\"|" "$TARGET/dub.json"
 fi
 
+# Rewrite tlb.json project field
+if [ -f "$TARGET/tlb.json" ]; then
+    sed -i "s|\"project\": \".*\"|\"project\": \"$TARGET_NAME\"|" "$TARGET/tlb.json"
+fi
+
+# Rewrite VS Code debug program path
+if [ -f "$TARGET/.vscode/launch.json" ]; then
+    sed -i "s|\"program\": \".*\"|\"program\": \"\${workspaceFolder}/$TARGET_NAME\"|" "$TARGET/.vscode/launch.json"
+fi
+
+# Append clone event to JOURNAL.md
 if [ -f "$TARGET/JOURNAL.md" ]; then
     printf '\n## Clone Event\n1. Project cloned into %s\n' "$TARGET" >> "$TARGET/JOURNAL.md"
 fi
 
 log "Project cloned successfully: $TARGET"
 
-# End of Document
+# End of Document <clone-d-project>

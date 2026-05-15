@@ -1,7 +1,5 @@
-# 08_D_PROJECT_STRUCTURE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/08_D_PROJECT_STRUCTURE.md
-
-# D Project Structure for the Apprentice Engineer
+# D Project Structure for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/08_D_PROJECT_STRUCTURE.md>
 
 This document teaches the apprentice how a D project is organized.  
 These skills are required before learning modules, imports, or multi‑file builds.

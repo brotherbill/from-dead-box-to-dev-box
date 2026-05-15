@@ -1,7 +1,5 @@
-# 10_D_FUNCTIONS_BASICS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/10_D_FUNCTIONS_BASICS.md
-
-# D Functions Basics for the Apprentice Engineer
+# D Functions Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/10_D_FUNCTIONS_BASICS.md>
 
 This document teaches the apprentice how to define, call, and reason about functions in D.  
 These skills are required before learning parameters, return values, modules, or multi‑file architecture.

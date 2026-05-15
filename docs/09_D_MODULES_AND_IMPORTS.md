@@ -1,7 +1,5 @@
-# 09_D_MODULES_AND_IMPORTS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/09_D_MODULES_AND_IMPORTS.md
-
-# D Modules and Imports for the Apprentice Engineer
+# D Modules and Imports for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/09_D_MODULES_AND_IMPORTS.md>
 
 This document teaches the apprentice how to split code into multiple files and connect them using modules and imports.  
 These skills are required before learning functions, libraries, or multi‑file projects.

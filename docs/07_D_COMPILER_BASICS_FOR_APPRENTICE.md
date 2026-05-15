@@ -1,7 +1,5 @@
-# 07_D_COMPILER_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/07_D_COMPILER_BASICS_FOR_APPRENTICE.md
-
-# D Compiler Basics for the Apprentice Engineer
+# D Compiler Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/07_D_COMPILER_BASICS_FOR_APPRENTICE.md>
 
 This document teaches the apprentice how to compile and run D programs using the `dmd` compiler.  
 These skills are required before learning project structure, modules, or multi‑file builds.
@@ -110,7 +108,7 @@ main
 
 Operator rule:
 
-- The apprentice never edits the executable.
+- The apprentice never edits the executable.  
 - Only `.d` files are edited.
 
 ---
@@ -179,7 +177,7 @@ The compiler prints an error message.
 
 Operator rule:
 
-- The apprentice reads the first error only.
+- The apprentice reads the first error only.  
 - Fix the first error before rerunning.
 
 ---

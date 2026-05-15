@@ -1,7 +1,5 @@
-# 16_D_FUNCTIONS_AND_PURE_LOGIC.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/16_D_FUNCTIONS_AND_PURE_LOGIC.md
-
-# D Functions and Pure Logic for the Apprentice Engineer
+# D Functions and Pure Logic for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/16_D_FUNCTIONS_AND_PURE_LOGIC.md>
 
 This document teaches the apprentice how to define functions, return values, and evaluate pure logic.  
 These skills are required before learning algorithms, recursion, and data‑structure fundamentals.

@@ -1,7 +1,5 @@
-# 19_D_STRINGS_AND_SLICING.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/19_D_STRINGS_AND_SLICING.md
-
-# D Strings and Slicing for the Apprentice Engineer
+# D Strings and Slicing for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/19_D_STRINGS_AND_SLICING.md>
 
 This document teaches the apprentice how to create strings, index characters, slice substrings, and process text deterministically.  
 These skills are required before learning parsing, tokenizing, and file‑processing workflows.

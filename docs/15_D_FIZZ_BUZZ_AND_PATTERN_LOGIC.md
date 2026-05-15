@@ -1,7 +1,5 @@
-# 15_D_FIZZ_BUZZ_AND_PATTERN_LOGIC.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/15_D_FIZZ_BUZZ_AND_PATTERN_LOGIC.md
-
-# D Fizz‑Buzz and Pattern Logic for the Apprentice Engineer
+# D Fizz‑Buzz and Pattern Logic for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/15_D_FIZZ_BUZZ_AND_PATTERN_LOGIC.md>
 
 This document teaches the apprentice how to combine loops and conditionals to produce patterned output.  
 These skills are required before learning algorithms, problem‑solving, and competitive programming basics.

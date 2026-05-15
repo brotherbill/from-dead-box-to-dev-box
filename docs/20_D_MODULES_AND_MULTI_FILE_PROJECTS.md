@@ -1,7 +1,5 @@
-# 20_D_MODULES_AND_MULTI_FILE_PROJECTS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/20_D_MODULES_AND_MULTI_FILE_PROJECTS.md
-
-# D Modules and Multi‑File Projects for the Apprentice Engineer
+# D Modules and Multi‑File Projects for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/20_D_MODULES_AND_MULTI_FILE_PROJECTS.md>
 
 This document teaches the apprentice how to split code across multiple files, import modules, and maintain deterministic project structure.  
 These skills are required before learning larger programs, libraries, and operator‑grade code organization.

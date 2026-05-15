@@ -1,7 +1,5 @@
-# 13_D_LOGICAL_OPERATORS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/13_D_LOGICAL_OPERATORS.md
-
-# D Logical Operators for the Apprentice Engineer
+# D Logical Operators for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/13_D_LOGICAL_OPERATORS.md>
 
 This document teaches the apprentice how to use logical operators to combine conditions.  
 These skills are required before learning loops, state machines, and multi‑branch logic.
@@ -210,7 +208,7 @@ Safe from division by zero
 
 Operator rule:
 
-- `&&` stops evaluating as soon as the first condition fails.
+- `&&` stops evaluating as soon as the first condition fails.  
 - `||` stops evaluating as soon as the first condition succeeds.
 
 ---

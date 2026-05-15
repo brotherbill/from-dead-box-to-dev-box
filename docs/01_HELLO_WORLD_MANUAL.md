@@ -1,7 +1,5 @@
-# 01_HELLO_WORLD_MANUAL.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/01_HELLO_WORLD_MANUAL.md
-
-# Hello World Manual (Apprentice Level)
+# Hello World Manual (Apprentice Level)  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/01_HELLO_WORLD_MANUAL.md>
 
 This is the first program every apprentice engineer writes.  
 It verifies that the Terminal, compiler, and environment are working correctly.

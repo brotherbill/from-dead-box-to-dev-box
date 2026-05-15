@@ -1,7 +1,5 @@
-# 11_D_FUNCTIONS_PARAMETERS_RETURNS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/11_D_FUNCTIONS_PARAMETERS_RETURNS.md
-
-# D Functions: Parameters and Return Values
+# D Functions: Parameters and Return Values  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/11_D_FUNCTIONS_PARAMETERS_RETURNS.md>
 
 This document teaches the apprentice how to use multiple parameters, multiple return values, and how to structure functions for clarity and correctness.  
 These skills are required before learning structs, classes, or larger program architecture.

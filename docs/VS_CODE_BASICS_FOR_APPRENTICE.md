@@ -1,9 +1,9 @@
-# VS_CODE_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/VS_CODE_BASICS_FOR_APPRENTICE.md
+# VS Code Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/VS_CODE_BASICS_FOR_APPRENTICE.md>
 
 # VS Code Basics for the Apprentice Engineer
 
-This document teaches the essential VS Code skills required for operating the dead‑box environment.  
+This document teaches the essential VS Code skills required for operating **The Learning Box**.  
 VS Code is the primary editing surface for all D projects.
 
 Follow each step exactly.
@@ -208,6 +208,6 @@ When the apprentice can:
 - run commands  
 - switch between editor and terminal  
 
-…they have the required VS Code foundation for all future operator work.
+…they have the required VS Code foundation for all future operator work inside **The Learning Box**.
 
 ###### End of Document <VS_CODE_BASICS_FOR_APPRENTICE.md>

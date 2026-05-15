@@ -1,7 +1,5 @@
-# 05_CORE_TERMINAL_COMMANDS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/05_CORE_TERMINAL_COMMANDS.md
-
-# Core Terminal Commands for the Apprentice Engineer
+# Core Terminal Commands for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/05_CORE_TERMINAL_COMMANDS.md>
 
 These are the essential commands every apprentice must know before using VS Code, the compiler, or multi‑file projects.  
 Each command must be typed exactly and executed with **ENTER**.

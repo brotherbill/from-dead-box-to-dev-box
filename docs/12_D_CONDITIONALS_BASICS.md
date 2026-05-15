@@ -1,7 +1,5 @@
-# 12_D_CONDITIONALS_BASICS.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/12_D_CONDITIONALS_BASICS.md
-
-# D Conditionals Basics for the Apprentice Engineer
+# D Conditionals Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/12_D_CONDITIONALS_BASICS.md>
 
 This document teaches the apprentice how to use `if`, `else if`, and `else` to control program flow.  
 These skills are required before learning loops, state machines, or decision‑based logic.

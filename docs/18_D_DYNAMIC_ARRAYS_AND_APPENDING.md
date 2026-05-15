@@ -1,7 +1,5 @@
-# 18_D_DYNAMIC_ARRAYS_AND_APPENDING.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/18_D_DYNAMIC_ARRAYS_AND_APPENDING.md
-
-# D Dynamic Arrays and Appending for the Apprentice Engineer
+# D Dynamic Arrays and Appending for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/18_D_DYNAMIC_ARRAYS_AND_APPENDING.md>
 
 This document teaches the apprentice how to create dynamic arrays, append values, grow lists, and process variable‑length data.  
 These skills are required before learning filtering, mapping, searching, and algorithmic list transformations.

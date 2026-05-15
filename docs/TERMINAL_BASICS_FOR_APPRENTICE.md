@@ -1,10 +1,9 @@
-# TERMINAL_BASICS_FOR_APPRENTICE.md
+
+# Terminal Basics for the Apprentice Engineer  
 ###### C:/dev/repos/dead-box-to-dev-box/docs/TERMINAL_BASICS_FOR_APPRENTICE.md
 
-# Terminal Basics for the Apprentice Engineer
-
-This document teaches the essential Terminal skills required for operating the dead‑box environment.  
-The Terminal is the primary interface for engineers.  
+This document teaches the essential Terminal skills required for operating **The Learning Box**.  
+The Terminal is the primary interface for apprentice engineers.  
 Follow each step exactly.
 
 ---
@@ -197,6 +196,6 @@ When the apprentice can:
 - clear the screen  
 - cancel processes  
 
-…they have the required Terminal foundation for all future operator work.
+…they have the required Terminal foundation for all future operator work inside **The Learning Box**.
 
 ###### End of Document <TERMINAL_BASICS_FOR_APPRENTICE.md>

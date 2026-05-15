@@ -1,9 +1,7 @@
-# UBUNTU_BASICS_FOR_APPRENTICE.md
-###### C:/dev/repos/dead-box-to-dev-box/docs/UBUNTU_BASICS_FOR_APPRENTICE.md
+# Ubuntu Basics for the Apprentice Engineer  
+###### <C:/dev/repos/dead-box-to-dev-box/docs/UBUNTU_BASICS_FOR_APPRENTICE.md>
 
-# Ubuntu Basics for the Apprentice Engineer
-
-This document teaches the essential Ubuntu skills required for operating the dead‑box environment.  
+This document teaches the essential Ubuntu skills required for operating **The Learning Box**.  
 These are the baseline actions every apprentice engineer must know.
 
 Follow each step exactly.  
@@ -20,7 +18,7 @@ Press:
 Ctrl + Alt + T
 ```
 
-A terminal window will open.
+A Terminal window will open.
 
 You will see a prompt similar to:
 
@@ -126,8 +124,10 @@ This duplicates the project cleanly.
 
 1. Press the **Super** key.
 2. Type:
+   ```
    Visual Studio Code
-3. Once you see **Visual Studio Code** at the top, press **ENTER**.
+   ```
+3. When **Visual Studio Code** appears at the top, press **ENTER**.
 
 VS Code will open.
 
@@ -171,7 +171,7 @@ Ctrl + S
 
 # 8. Compile a D Program
 
-In the terminal inside VS Code, type:
+In the Terminal inside VS Code, type:
 
 ```
 dmd <file>.d
@@ -226,6 +226,6 @@ When the apprentice can:
 - compile  
 - run  
 
-…they have the required Ubuntu foundation for all future operator work.
+…they have the required Ubuntu foundation for all future operator work inside **The Learning Box**.
 
 ###### End of Document <UBUNTU_BASICS_FOR_APPRENTICE.md>

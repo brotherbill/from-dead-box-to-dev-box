@@ -197,6 +197,8 @@ The Operator is always the person at the keyboard, doing their own install.
 1. Tone must be dry, literal, procedural, minimal, and consistent.  
 1. This repo is the foundation for all future machines.
 
+---
+
 # 16. Four‑Backtick Emission Doctrine
 
 1. All regenerated files must be delivered in a single fenced code block using four backticks.
@@ -206,6 +208,8 @@ The Operator is always the person at the keyboard, doing their own install.
 1. Nested code blocks inside the regenerated file must use three backticks.
 1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
 
+---
+
 # 17. Header and Footer Boundary Doctrine
 
 1. All regenerated procedural files must include their header lines in Section 0.
@@ -213,7 +217,7 @@ The Operator is always the person at the keyboard, doing their own install.
    - the H1 filename line  
    - the purpose statement  
    - the file‑location header  
-1. These lines are structural and must be regenerated exactly according to formatting rules.
+1. These lines must be regenerated exactly according to formatting rules.
 1. All regenerated procedural files must include the footer line in the final section.
 1. The footer line must follow this exact pattern:  
    ```
@@ -222,6 +226,8 @@ The Operator is always the person at the keyboard, doing their own install.
 1. The `<filename>` value must match the literal filename of the document.
 1. The header and footer are structural boundaries and must appear only once per file.
 1. These boundaries are load‑bearing and apply to all regenerated artifacts in this repo.
+
+---
 
 # 18. Section Boundary Doctrine
 
@@ -234,13 +240,15 @@ The Operator is always the person at the keyboard, doing their own install.
 1. A single blank line must appear after the horizontal rule.
 1. Section headers must not appear directly adjacent to other content without the required blank lines.
 1. The boundary pattern is:
-   <end of section content>
-   <one blank line>
-   ---
-   <one blank line>
-   <next section header>
+   <end of section content>  
+   <one blank line>  
+   ---  
+   <one blank line>  
+   <next section header>  
 1. This boundary pattern is mandatory for all regenerated procedural files.
 1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
+
+---
 
 # 19. Informational‑Now, Action‑Later Doctrine
 
@@ -252,19 +260,54 @@ The Operator is always the person at the keyboard, doing their own install.
 1. `ACTION:` lines must begin with the exact prefix `ACTION:` and must contain exactly one operator action.
 1. This doctrine is load‑bearing and applies to all regenerated artifacts in this repo.
 
-### Operator Analogy (Pilot Landing Pattern)
+---
 
-- Before landing, the pilot says:  
-  *“When we enter the landing pattern, the flaps will need to be set to 40 degrees.”*  
-  → This is informational. You simply hear it and move on.
+# 20. Benny Naming Doctrine
 
-- During landing, the pilot says:  
-  **“Flaps to 40.”**  
-  → This is an action. It must be done immediately.
+1. The name **Benny** refers to a real person and a real system account.  
+1. The name **Benny** must never appear in any MD file as an example identity.  
+1. No example may use **Benny**, **benny**, or any variation of the name.  
+1. All examples must use neutral, non‑colliding identities such as:  
+   - Alice  
+   - Bob  
+   - Carol  
+   - Operator01  
+   - StudentA  
+1. The name **Benny** may be used only in direct conversation with Brother Bill and never in documentation.  
+1. This doctrine is load‑bearing and prevents namespace collisions, privilege confusion, and UB.
 
-This is the same distinction used in all procedural files:  
-Only `ACTION:` lines are performed now.  
-All other lines are recipes for what you will do later.
+---
 
+# 21. Laundry Shortcut Doctrine
+
+1. The terminal may accumulate output that reduces visibility and increases cognitive load.  
+1. The keyboard shortcut `CTRL + L` clears the terminal display.  
+1. The letter **L** is associated with the word **Laundry** to provide a deterministic mnemonic.  
+1. The mnemonic is defined as:  
+   - **“L for Laundry: clear the terminal and restore a clean working surface.”**  
+1. The mnemonic is permitted because it references a universal, non‑fictional operator experience.  
+1. The mnemonic must not introduce humor, slang, or conversational tone.  
+1. The mnemonic must not be expanded into metaphor beyond the single permitted phrase.  
+1. The shortcut `CTRL + L` is preferred over typing `clear` because it reduces operator effort and eliminates the need for an additional `ENTER` keystroke.  
+1. This doctrine is load‑bearing and applies to all operator training and all procedural MDs that reference terminal hygiene.
+
+---
+
+# 22. ACTION Comment Doctrine
+
+1. ACTION blocks must use a shell‑safe comment prefix to prevent accidental execution.  
+1. The ACTION marker must appear exactly as:  
+   ```
+   # ACTION:
+   ```  
+1. The ACTION marker must appear alone on its own line.  
+1. The operator command must appear on the line immediately following the ACTION marker.  
+1. The ACTION marker line must contain no executable content.  
+1. The ACTION marker functions as a semantic indicator only and must not alter system state.  
+1. The operator command must be copy‑safe and must not require trimming or editing before execution.  
+1. Multi‑line commands are permitted and must follow the ACTION marker without blank lines.  
+1. This doctrine is load‑bearing and applies to all procedural MDs in this repo.
+
+---
 
 ###### End of Document <MY_RULES.md>

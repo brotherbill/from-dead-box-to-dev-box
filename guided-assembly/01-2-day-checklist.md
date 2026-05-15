@@ -1,5 +1,5 @@
 # 2‑Day Checklist: From Dead Box to Dev Box
-###### C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/01-2-day-checklist.md
+###### <C:/dev/repos/from-dead-box-to-dev-box/guided-assembly/01-2-day-checklist.md>
 
 This checklist describes the sequence of actions required to perform a complete “brain transplant” on a computer, typically up to ten years old and still physically functional, turning it into a working D development machine. After this process, the system will no longer retain its previous operating system or configuration; it will start fresh with Ubuntu, regardless of whether it previously ran Windows or macOS or was unable to boot.  
 Each item must be completed in order.
@@ -63,15 +63,13 @@ Each item must be completed in order.
 1. Open system settings for user accounts.
 1. Add a child standard account.
 1. Confirm that the child account has no administrative privileges.
-1. Add a parent daily‑use standard account (optional).
+1. Add a parent daily‑use standard account.
 1. Sign out and sign in to each standard account once to verify access.
 
 ### 8. Update the system
 
 1. Sign in as the parent administrator account.
-1. Open the COSMIC Store.
-1. Apply all updates in System Packages.
-1. Apply all remaining updates in the Updates tab.
+1. Apply all system updates.
 1. If updates do not begin, run:
 
    ```
@@ -91,6 +89,7 @@ Each item must be completed in order.
 1. Install the D compiler using the recommended method.
 1. Confirm that the compiler is available on the command line for the child standard account.
 1. Install the D language extension in VS Code.
+1. Add the scripts to create and clone D projects that can do F5 debugging.
 
 ### 11. Lock down VS Code behavior
 
@@ -111,3 +110,5 @@ Each item must be completed in order.
 ---
 
 When all items in this checklist are complete, the machine is ready for use as a D development environment for a young engineer.
+
+###### End of Document <01-2-day-checklist.md>
