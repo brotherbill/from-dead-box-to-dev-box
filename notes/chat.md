@@ -263,4 +263,13 @@ No structural boundaries were changed.
 1. Confirmed no doctrine changes were required.
 1. Document is now stable, deterministic, and ready for long‑term use.
 
+## 2026-05-15 5:47 PM EDT — Regenerated 00-can-i-do-this.md
+
+- Integrated new parent-facing section recommending **02-download-ubuntu-22.md** as the first confidence-building UOW.
+- Added framing that the step takes **15–30 minutes** and demonstrates real administrator capability.
+- Removed all “inside baseball” details (e.g., post-checksum file moves) to preserve emotional clarity.
+- Expanded “Costs of Avoiding It” to include the concrete financial cost of paying a local shop or neighbor.
+- Regenerated the full document with stable tone, pacing, and doctrine alignment.
+- No changes to UOW structure or sequencing; this was a pure content refinement.
+
 ###### End of Document <chat.md>

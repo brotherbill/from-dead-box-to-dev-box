@@ -35,8 +35,8 @@ This path was intentionally designed for non‑technical parents.
 It follows three principles:
 
 1. **No surprises**  
-2. **No jargon**  
-3. **No decisions you have to make alone**
+1. **No jargon**  
+1. **No decisions you have to make alone**
 
 You will always know:
 
@@ -205,6 +205,37 @@ And you return to the next UOW **fresh**, not drained.
 
 ---
 
+## A Short, Real Step That Proves You Can Do This
+
+If you want to see for yourself that you *can* do real computer‑administrator tasks, start with:
+
+**02‑download‑ubuntu‑22.md**
+
+This step takes **15–30 minutes**, not hours.  
+It is short, calm, and safe — and it includes something most parents have never done:
+
+> **Validating a checksum.**
+
+You don’t need to know what a checksum is.  
+The guide shows you exactly what to do, one step at a time.
+
+And when the checksum matches, you will know:
+
+- you followed a real technical procedure  
+- you completed it correctly  
+- you did something most people think only “computer people” can do  
+- you succeeded on your very first UOW  
+
+This one small win changes everything.
+
+It proves:
+
+> **If you are guided step by step, you can do real admin duties.**
+
+And that confidence carries into the rest of the installation.
+
+---
+
 ## What’s the Worst That Can Happen?
 
 As long as you don’t take a sledgehammer to the computer in frustration, the worst that can happen is simply this:
@@ -235,24 +266,6 @@ because the guide is written for them.
 
 ---
 
-## Benefits of Doing It Yourself
-
-Parents who complete this installation report:
-
-- increased confidence  
-- reduced fear of technology  
-- a sense of accomplishment  
-- a deeper connection to their child’s learning  
-- the ability to help their child later  
-- the knowledge that they built something real  
-
-And most importantly:
-
-> You will know exactly what is on your child’s computer —  
-> because *you* put it there.
-
----
-
 ## Costs of Avoiding It
 
 If you choose not to do the install yourself:
@@ -261,6 +274,7 @@ If you choose not to do the install yourself:
 - you lose the chance to help your child later  
 - you depend on someone else for every future change  
 - you miss the confidence boost that comes from doing something new  
+- **and you pay real money to someone else** — usually a local computer shop or a neighbor who knows computers  
 
 None of these are fatal — but they are real.
 
