@@ -16,7 +16,7 @@ This procedure applies to Pop!\_OS and Ubuntu systems that follow the from-dead-
 
 The following conditions are assumed to be true before any ACTION blocks are executed.
 
-1. The system is running a supported Debian-based distribution such as Pop!\_OS or Ubuntu.  
+1. The system is running a supported Debian-based distribution such as Ubuntu.  
 1. The operator has a terminal session with a user account that can elevate with `sudo`.  
 1. The system has a working network connection to the internet.  
 1. No RustDesk `.deb` package has been installed on this system for this procedure.  

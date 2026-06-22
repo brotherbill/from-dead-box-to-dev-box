@@ -12,7 +12,7 @@ Only the parent administrator account may install extensions.
 
 ## Install the D Language Extensions
 
-1. Ensure you are using the **parent administrator account**.
+1. Ensure you are using the **standard explorer account**.
 1. Open **Visual Studio Code**.
 1. On the left side of the window, click the **Extensions** icon.  
    It looks like four squares arranged in a grid.

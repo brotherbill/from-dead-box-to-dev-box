@@ -7,7 +7,7 @@
 1. Enter the administrator password you created during installation.
 1. Press **Enter** to sign in.
 
-You will now see the PopOS! first‑boot setup screens.
+You will now see the Ubuntu first‑boot setup screens.
 
 ---
 

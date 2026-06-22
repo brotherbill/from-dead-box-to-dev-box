@@ -51,7 +51,7 @@
 
 1. Click **START**.
 1. Confirm all warnings about erasing the USB flash drive.
-1. If prompted for ISO mode, select: `ISO Image mode (Recommended)`
+1. If prompted for ISO mode, select: `Write in ISO Image mode (Recommended)`
 1. Wait for the write process to complete.
 
 ---

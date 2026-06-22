@@ -99,21 +99,21 @@ Breaking it will produce a system that cannot be repaired without starting over.
 ---
 
 # Install Required Non‑D Extensions
-
+  
 1. Open the **Extensions** panel (**Ctrl+Shift+X**).  
-1. Wait for the panel to stabilize.  
-1. Install the following extensions in this exact order:
+2. Wait for the panel to stabilize.  
+3. Install the following extensions in this exact order:
 
    1. **GitHub Pull Requests** (GitHub)  
-   1. **GitHub Repositories** (GitHub)  ==> Don't install <==
-   1. **GitLens — Git supercharged** (GitKraken)  
-   1. **Markdown All in One** (Yu Zhang)  
-   1. **YAML** (Red Hat)  
-   1. **EditorConfig** (EditorConfig)
+   2. **GitHub Repositories** (GitHub)  ==> Don't install <==
+   3. **GitLens — Git supercharged** (GitKraken)  
+   4. **Markdown All in One** (Yu Zhang)  
+   5. **YAML** (Red Hat)  
+   6. **EditorConfig** (EditorConfig)
 
-1. Wait for each extension to finish installing.  
-1. Do not install any pre‑release versions.  
-1. If prompted, select **Trust Publisher & Install**.
+4. Wait for each extension to finish installing.  
+5. Do not install any pre‑release versions.  
+6. If prompted, select **Trust Publisher & Install**.
 
 ---
 
